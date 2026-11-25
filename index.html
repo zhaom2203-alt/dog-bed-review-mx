@@ -1,0 +1,2486 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>狗窝 SKU 差评分类汇总 · 墨西哥站</title>
+<style>
+*{box-sizing:border-box}
+:root{--bg:#f6f8fb;--card:#fff;--ink:#1b2535;--dim:#8b98ad;--line:#e4eaf3;
+--accent:#2F5BD7;--hi:#D92D20;--mid:#DC8A0C;--lo:#2F7E67;--picbg:#FFF5F4}
+body{margin:0;background:var(--bg);color:var(--ink);
+font:14px/1.6 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif}
+.wrap{max-width:1500px;margin:0 auto;padding:26px 22px 60px}
+h1{font-size:25px;margin:0 0 6px;letter-spacing:-.3px}
+.sub{color:var(--dim);font-size:13px;margin-bottom:22px}
+.sub b{color:var(--accent)}
+.block{background:var(--card);border:1px solid var(--line);border-radius:12px;
+padding:20px 22px;margin-bottom:20px}
+.bh{font-size:17px;font-weight:700;margin:0 0 4px;display:flex;align-items:center;gap:9px}
+.bh i{width:4px;height:17px;background:var(--accent);border-radius:2px;display:inline-block}
+.bs{color:var(--dim);font-size:12.5px;margin:0 0 16px;padding-left:13px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:12px}
+.k{background:#fbfcfe;border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.k em{display:block;color:var(--dim);font-size:12px;font-style:normal;margin-bottom:5px}
+.k b{font-size:27px;font-weight:800;letter-spacing:-.5px;line-height:1.1}
+.k s{text-decoration:none;color:var(--dim);font-size:12px;display:block;margin-top:4px}
+.k.acc{background:#f2f6ff;border-color:#cfdcfa} .k.acc b{color:var(--accent)}
+.k.dang{background:var(--picbg);border-color:#f8d4d1} .k.dang b{color:var(--hi)}
+table{width:100%;border-collapse:collapse;font-size:12.8px}
+th{background:#f3f6fb;text-align:left;padding:9px 10px;font-weight:700;
+border-bottom:2px solid var(--line);white-space:nowrap;position:sticky;top:0;z-index:2}
+td{padding:8px 10px;border-bottom:1px solid #f0f4f9;vertical-align:top}
+tr:hover td{background:#fafcff}
+tr.pic td{background:var(--picbg)} tr.pic:hover td{background:#ffecea}
+.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.cn{white-space:nowrap} .tt{min-width:200px} .th{color:#5a6b85;font-size:12px}
+.dim{color:var(--dim);font-size:11.5px}
+code{font:12px ui-monospace,Consolas,monospace;background:#f1f4f9;
+padding:1px 5px;border-radius:4px}
+code.sk{background:#eaf0ff;color:var(--accent);font-weight:700}
+.r-hi{color:var(--hi)} .r-mid{color:var(--mid)} .r-lo{color:var(--lo)}
+.bar{width:150px} .bw{height:8px;background:#eef2f8;border-radius:5px;
+overflow:hidden;display:inline-block;width:110px;vertical-align:middle}
+.bw i{display:block;height:100%;border-radius:5px}
+.bw i.hi{background:var(--hi)} .bw i.mid{background:var(--mid)} .bw i.lo{background:#9FB6DD}
+.bv{font-size:11px;color:var(--dim);margin-left:6px}
+.scroll{max-height:620px;overflow:auto;border:1px solid var(--line);border-radius:9px}
+.pcard{border:1px solid #f3d3cf;border-radius:11px;margin-bottom:15px;overflow:hidden}
+.phead{background:linear-gradient(180deg,#fff8f7,#fff);padding:14px 17px;
+border-bottom:1px solid #f6e0dd}
+.ptag{background:var(--hi);color:#fff;font-size:11px;font-weight:700;
+padding:2px 8px;border-radius:5px;margin-right:9px}
+.pt{font-size:13.5px}
+.pkpi{display:flex;flex-wrap:wrap;gap:9px;margin-top:11px}
+.pkpi span{background:#fff;border:1px solid var(--line);border-radius:8px;
+padding:6px 11px;min-width:84px}
+.pkpi i{display:block;color:var(--dim);font-size:11px;font-style:normal}
+.pkpi b{font-size:15px;font-weight:800}
+.pbody{display:flex;gap:18px;padding:15px 17px}
+.pcol{flex:1;min-width:0} .pcol.s{flex:0 0 250px}
+.pcol h4{font-size:12.5px;margin:0 0 8px;color:var(--dim);font-weight:700;
+text-transform:uppercase;letter-spacing:.4px}
+.pcol h4+blockquote{margin-top:0}
+blockquote{margin:0 0 9px;padding:9px 13px;background:#fcfdff;
+border-left:3px solid var(--hi);border-radius:0 7px 7px 0;
+font-size:12.5px;color:#43506a;font-style:italic}
+.skul{background:#fbfcfe;border:1px solid var(--line);border-radius:8px;
+padding:11px 13px;font-size:12px;line-height:2}
+.t2 th{position:static;background:#faf6f5;font-size:11.5px}
+.q{color:#50607a;font-size:11.8px;max-width:520px}
+.chip-pic{background:#fdeceb;color:var(--hi);border:1px solid #f6cfcb;
+font-size:11px;font-weight:700;padding:1px 7px;border-radius:5px;white-space:nowrap}
+.chip-ok{background:#edf7f3;color:var(--lo);border:1px solid #cfe9df;
+font-size:11px;padding:1px 7px;border-radius:5px;white-space:nowrap}
+.fbar{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:12px;align-items:center}
+.fb{background:#fff;border:1px solid var(--line);border-radius:7px;
+padding:5px 11px;font-size:12px;cursor:pointer;color:#4a5a73;font-family:inherit}
+.fb:hover{border-color:#bfd0f0} .fb.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+.note{background:#fbfcfe;border:1px solid var(--line);border-left:3px solid var(--accent);
+border-radius:0 9px 9px 0;padding:13px 17px;font-size:12.5px;color:#48566e}
+.note b{color:var(--ink)} .note ul{margin:7px 0 0;padding-left:20px}
+.note li{margin:3px 0}
+footer{color:var(--dim);font-size:12px;text-align:center;padding:18px 0 0;
+border-top:1px solid var(--line);margin-top:26px}
+.ins{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:13px}
+.ic{background:#fbfcfe;border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.ic h5{margin:0 0 7px;font-size:13px;display:flex;align-items:center;gap:7px}
+.ic h5 em{font-style:normal;font-size:11px;font-weight:700;padding:1px 7px;border-radius:5px}
+.ic.d h5 em{background:#fdeceb;color:var(--hi)}
+.ic.w h5 em{background:#fdf5e7;color:var(--mid)}
+.ic.g h5 em{background:#edf7f3;color:var(--lo)}
+.ic p{margin:0;font-size:12.5px;color:#4d5c75;line-height:1.75}
+.ic p b{color:var(--ink)}
+@media(max-width:900px){.pbody{flex-direction:column}.pcol.s{flex:1}}
+</style></head><body><div class="wrap">
+
+<h1>狗窝 SKU 差评分类汇总报告</h1>
+<div class="sub">站点 <b>Amazon 墨西哥（MX）</b> · 卖家 <b>COWIT MX</b> · 品牌 Feandrea ·
+全量 <b>82</b> 个 SKU / <b>13</b> 个父体 Listing ·
+数据源 Sorftime <code>product_detail</code> + <code>product_customers_say</code> · 抓取日 2026-11-25</div>
+
+<div class="block">
+<div class="bh"><i></i>核心指标</div>
+<div class="bs">评论声量按父体去重统计（同一父体下的变体共享同一份评论汇总，不重复计数）</div>
+<div class="kpis">
+<div class="k"><em>覆盖 SKU</em><b>82</b><s>82/82 全部取到数据</s></div>
+<div class="k"><em>父体 Listing</em><b>13</b><s>评论聚合单位</s></div>
+<div class="k"><em>主题提及总量</em><b>3,066</b><s>覆盖 27 个评论主题</s></div>
+<div class="k dang"><em>负面提及总量</em><b>481</b><s>整体负面率 15.7%</s></div>
+<div class="k dang"><em>图片/描述不符 · 负面</em><b>24</b><s>占全部负面 5.0%</s></div>
+<div class="k dang"><em>受影响 SKU</em><b>19</b><s>占全量 23.2% · 3 个父体</s></div>
+</div></div>
+
+<div class="block">
+<div class="bh"><i></i>结论速览</div>
+<div class="bs">按影响面与紧急度排序</div>
+<div class="ins">
+<div class="ic d"><h5><em>最紧急</em>填充物是第一痛点，不是图片</h5>
+<p><b>填充与支撑</b>负面率 <b class="r-hi">69.8%</b>（97/139），是所有大类里最高的，占全部负面 <b>20.2%</b>。
+最严重的 <code>B08DFVKB4V</code>（甜甜圈窝，15 个 SKU）<code>relleno</code> 负面 <b class="r-hi">46/61＝75.4%</b>、
+<code>deformación</code> <b class="r-hi">33/45＝73.3%</b>。该父体占 BSR #3~#4、评论近 6000 条，是流量主力，负面集中在"塌陷、海绵太薄"。</p></div>
+<div class="ic d"><h5><em>你问的</em>图片不符：3 个父体 / 19 个 SKU</h5>
+<p>命中「图片与实物不符」的负面提及 <b class="r-hi">24</b> 条，占全部负面 <b>5.0%</b> —— 绝对量不大，
+但 <code>B0FSCCNJC2</code> 的 <code>publicidad engañosa</code>（虚假宣传）负面率 <b class="r-hi">100%（6/6）</b>，
+买家直接用了 <b>fraude（欺诈）</b> 一词，是最该优先处理的声誉风险。</p></div>
+<div class="ic w"><h5><em>需关注</em>BSR 当前健康，优先盯住高销量父体</h5>
+<p>13 个父体里 <b>8 个</b>在 Camas 类目 TOP25，<code>B0F666T1C2</code> 为 <b>#2~#3</b>（最高月销 1239）。
+单日快照只能描述当前排名，不能判断后续趋势。高负面父体中的 B08DFVKB4V（#3~#4）、B0HGLC2G83（#5）、B0F666T1C2（#2~#3）
+同时是销量主力，优先改善其填充与耐用问题，业务价值更高。</p></div>
+<div class="ic g"><h5><em>反向发现</em>多数 Listing 的图片是"过度兑现"</h5>
+<p>排查全部 13 个父体，有 <b>4 个</b>父体的 <code>apariencia</code> / <code>tamaño</code> 主题出现<b>正向</b>对照原话 ——
+"coincide exactamente con la foto mostrada"（和展示图完全一致）、
+"las medidas y la foto son muy fieles a la realidad"（尺寸和图片非常真实）。
+说明主图策略整体是加分项，问题是<b>局部产品线</b>而非系统性图文不符。</p></div>
+</div></div>
+
+<div class="block">
+<div class="bh"><i></i>一 · 差评大类汇总</div>
+<div class="bs">按负面提及量降序。负面率＝该类负面提及 ÷ 该类总提及；标红行为「图片与描述不符」类</div>
+<table><thead><tr><th>差评大类</th><th class="num">总提及</th><th class="num">负面</th>
+<th>负面量对比</th><th class="num">负面率</th><th class="num">占全部负面</th>
+<th class="num">父体数</th><th>涵盖主题</th></tr></thead>
+<tbody><tr class="">
+<td class="cn"><b>材质与做工</b></td>
+<td class="num">862</td><td class="num">130</td>
+<td class="bar"><div class="bw"><i class="lo" style="width:100.0%"></i></div><span class="bv">100.0%</span></td>
+<td class="num r-lo"><b>15.1%</b></td>
+<td class="num">27.0%</td>
+<td class="num">13</td>
+<td class="th">厚度 / 整体质量 / 材料质量 / 柔软度</td></tr><tr class="">
+<td class="cn"><b>填充与支撑</b></td>
+<td class="num">139</td><td class="num">97</td>
+<td class="bar"><div class="bw"><i class="hi" style="width:74.6%"></i></div><span class="bv">74.6%</span></td>
+<td class="num r-hi"><b>69.8%</b></td>
+<td class="num">20.2%</td>
+<td class="num">5</td>
+<td class="th">填充物 / 硬挺度 / 软垫厚度</td></tr><tr class="">
+<td class="cn"><b>耐用与变形</b></td>
+<td class="num">129</td><td class="num">60</td>
+<td class="bar"><div class="bw"><i class="hi" style="width:46.2%"></i></div><span class="bv">46.2%</span></td>
+<td class="num r-hi"><b>46.5%</b></td>
+<td class="num">12.5%</td>
+<td class="num">3</td>
+<td class="th">变形 / 耐用性</td></tr><tr class="">
+<td class="cn"><b>尺寸与版型</b></td>
+<td class="num">441</td><td class="num">57</td>
+<td class="bar"><div class="bw"><i class="lo" style="width:43.8%"></i></div><span class="bv">43.8%</span></td>
+<td class="num r-lo"><b>12.9%</b></td>
+<td class="num">11.9%</td>
+<td class="num">12</td>
+<td class="th">尺寸 / 尺寸合适度 / 贴合/成型</td></tr><tr class="">
+<td class="cn"><b>外观与质感</b></td>
+<td class="num">276</td><td class="num">42</td>
+<td class="bar"><div class="bw"><i class="lo" style="width:32.3%"></i></div><span class="bv">32.3%</span></td>
+<td class="num r-lo"><b>15.2%</b></td>
+<td class="num">8.7%</td>
+<td class="num">12</td>
+<td class="th">外观</td></tr><tr class="">
+<td class="cn"><b>价格与价值</b></td>
+<td class="num">278</td><td class="num">42</td>
+<td class="bar"><div class="bw"><i class="lo" style="width:32.3%"></i></div><span class="bv">32.3%</span></td>
+<td class="num r-lo"><b>15.1%</b></td>
+<td class="num">8.7%</td>
+<td class="num">13</td>
+<td class="th">价格 / 性价比</td></tr><tr class="">
+<td class="cn"><b>舒适体验</b></td>
+<td class="num">814</td><td class="num">29</td>
+<td class="bar"><div class="bw"><i class="lo" style="width:22.3%"></i></div><span class="bv">22.3%</span></td>
+<td class="num r-lo"><b>3.6%</b></td>
+<td class="num">6.0%</td>
+<td class="num">13</td>
+<td class="th">宠物喜爱度 / 舒适度</td></tr><tr class="">
+<td class="cn"><b>清洁与功能</b></td>
+<td class="num">77</td><td class="num">14</td>
+<td class="bar"><div class="bw"><i class="lo" style="width:10.8%"></i></div><span class="bv">10.8%</span></td>
+<td class="num r-lo"><b>18.2%</b></td>
+<td class="num">2.9%</td>
+<td class="num">4</td>
+<td class="th">可拆卸 / 易清洁</td></tr><tr class="pic">
+<td class="cn"><b>图片与描述不符</b></td>
+<td class="num">6</td><td class="num">6</td>
+<td class="bar"><div class="bw"><i class="hi" style="width:4.6%"></i></div><span class="bv">4.6%</span></td>
+<td class="num r-hi"><b>100.0%</b></td>
+<td class="num">1.2%</td>
+<td class="num">1</td>
+<td class="th">虚假宣传</td></tr><tr class="">
+<td class="cn"><b>其他</b></td>
+<td class="num">44</td><td class="num">4</td>
+<td class="bar"><div class="bw"><i class="lo" style="width:3.1%"></i></div><span class="bv">3.1%</span></td>
+<td class="num r-lo"><b>9.1%</b></td>
+<td class="num">0.8%</td>
+<td class="num">4</td>
+<td class="th">aceptación / capacidad / diseño / fácil de lavar</td></tr></tbody>
+<tfoot><tr style="background:#f3f6fb;font-weight:700">
+<td>合计</td><td class="num">3,066</td><td class="num">481</td>
+<td></td><td class="num">15.7%</td><td class="num">100.0%</td>
+<td class="num">13</td><td></td></tr></tfoot></table></div>
+
+<div class="block">
+<div class="bh"><i></i>二 · 专项：图片与实物不符</div>
+<div class="bs">判定依据：主题原文命中「no se parece / no se ve como la imagen / publicidad engañosa /
+no cumple con la descripción / diferenciándose de lo mostrado en la foto」等线索词。原文照录，未翻译改写</div>
+<div class="pcard">
+ <div class="phead">
+  <div><span class="ptag">父体 B0FSCCNJC2</span>
+   <b class="pt">FEANDREA Cama para Perros, Felpa, Lavable, Antideslizante, 80 x 50 cm</b></div>
+  <div class="pkpi">
+   <span><i>涉及 SKU</i><b>4</b></span>
+   <span><i>不符主题负面</i><b class="r-hi">11/17</b></span>
+   <span><i>负面率</i><b class="r-hi">64.7%</b></span>
+   <span><i>BSR</i><b>#121</b></span>
+   <span><i>评分</i><b>4.2</b></span>
+   <span><i>评论数</i><b>449</b></span>
+   <span><i>月销</i><b>145</b></span>
+  </div>
+ </div>
+ <div class="pbody">
+  <div class="pcol"><h4>命中主题</h4>
+   <table class="t2"><thead><tr><th>主题</th><th>提及</th><th>负面</th><th>负面率</th><th>命中线索</th></tr></thead><tbody><tr><td>publicidad engañosa<span class=dim> · 虚假宣传</span></td>
+<td class=num>6</td><td class=num>6</td>
+<td class="num r-hi"><b>100.0%</b></td>
+<td class=q>publicidad engañosa; no es lo que anuncian; no cumple con la descripción; fraude</td></tr><tr><td>apariencia<span class=dim> · 外观</span></td>
+<td class=num>11</td><td class=num>5</td>
+<td class="num r-hi"><b>45.5%</b></td>
+<td class=q>no se parece</td></tr></tbody></table>
+   <h4>买家原话（西语原文）</h4><blockquote>Los clientes consideran que la cama para mascotas no es lo que anuncian y presenta publicidad engañosa. Mencionan que no cumple con la descripción y califican el producto como un fraude.</blockquote><blockquote>Los clientes tienen opiniones divididas sobre la apariencia de esta cama para mascotas. Algunos la consideran bonita, mientras que otros señalan que no se parece a nada en la foto y que se siente el piso muy feo. También mencionan que parece tapete.</blockquote></div>
+  <div class="pcol s"><h4>受影响 SKU（4）</h4><div class="skul"><code>666UPGW291GN01</code> <span class=dim>B0F6C26LMW</span><br><code>666UPGW292GN01</code> <span class=dim>B0F6CD59CH</span><br><code>666UPGW293GN01</code> <span class=dim>B0F6BPF249</span><br><code>666UPGW294GN01</code> <span class=dim>B0F6BFZMGP</span></div></div>
+ </div></div><div class="pcard">
+ <div class="phead">
+  <div><span class="ptag">父体 B0GMWY2S4C</span>
+   <b class="pt">FEANDREA Cama Sofá para Perros y Mascotas, Sillón Lavable con Bordes E</b></div>
+  <div class="pkpi">
+   <span><i>涉及 SKU</i><b>5</b></span>
+   <span><i>不符主题负面</i><b class="r-hi">8/19</b></span>
+   <span><i>负面率</i><b class="r-hi">42.1%</b></span>
+   <span><i>BSR</i><b>#13~#23</b></span>
+   <span><i>评分</i><b>4.4</b></span>
+   <span><i>评论数</i><b>862</b></span>
+   <span><i>月销</i><b>312</b></span>
+  </div>
+ </div>
+ <div class="pbody">
+  <div class="pcol"><h4>命中主题</h4>
+   <table class="t2"><thead><tr><th>主题</th><th>提及</th><th>负面</th><th>负面率</th><th>命中线索</th></tr></thead><tbody><tr><td>apariencia<span class=dim> · 外观</span></td>
+<td class=num>13</td><td class=num>4</td>
+<td class="num r-hi"><b>30.8%</b></td>
+<td class=q>no se ve para nada como la imagen; no es lo que esperaban</td></tr><tr><td>ajuste<span class=dim> · 贴合/成型</span></td>
+<td class=num>6</td><td class=num>4</td>
+<td class="num r-hi"><b>66.7%</b></td>
+<td class=q>nunca llegó a agarrar la forma que aparece en la imagen</td></tr></tbody></table>
+   <h4>买家原话（西语原文）</h4><blockquote>Los clientes tienen opiniones divididas sobre la apariencia de la cama para mascotas. Algunos la consideran muy bonita y linda, mientras que otros mencionan que no se ve para nada como la imagen y no es lo que esperaban. Sin embargo, algunos clientes indican que es fiel a la fotografía y que los acabados son de calidad.</blockquote><blockquote>Los clientes tienen opiniones divididas sobre el ajuste de la cama para mascotas. Algunos mencionan que se hincha bien y se esponja como prometía, mientras que otros indican que no se hincha, queda aplastada y nunca llegó a agarrar la forma que aparece en la imagen.</blockquote></div>
+  <div class="pcol s"><h4>受影响 SKU（5）</h4><div class="skul"><code>666UPGW271G01</code> <span class=dim>B0DM8P63N8</span><br><code>666UPGW271GR01</code> <span class=dim>B0FDPHSDQ4</span><br><code>666UPGW272G01</code> <span class=dim>B0DM8JM7GC</span><br><code>666UPGW273G01</code> <span class=dim>B0DM8LNKF8</span><br><code>666UPGW274GA01</code> <span class=dim>B0FDQDYTHH</span></div></div>
+ </div></div><div class="pcard">
+ <div class="phead">
+  <div><span class="ptag">父体 B0HGF1MDBT</span>
+   <b class="pt">FEANDREA Cama para Perros, M, Antideslizante y Lavable, 76 x 51 x 16 c</b></div>
+  <div class="pkpi">
+   <span><i>涉及 SKU</i><b>10</b></span>
+   <span><i>不符主题负面</i><b class="r-hi">5/10</b></span>
+   <span><i>负面率</i><b class="r-hi">50.0%</b></span>
+   <span><i>BSR</i><b>#14~#17</b></span>
+   <span><i>评分</i><b>4.4</b></span>
+   <span><i>评论数</i><b>528</b></span>
+   <span><i>月销</i><b>312</b></span>
+  </div>
+ </div>
+ <div class="pbody">
+  <div class="pcol"><h4>命中主题</h4>
+   <table class="t2"><thead><tr><th>主题</th><th>提及</th><th>负面</th><th>负面率</th><th>命中线索</th></tr></thead><tbody><tr><td>calidad del material<span class=dim> · 材料质量</span></td>
+<td class=num>10</td><td class=num>5</td>
+<td class="num r-hi"><b>50.0%</b></td>
+<td class=q>diferenciándose de lo mostrado en la foto</td></tr></tbody></table>
+   <h4>买家原话（西语原文）</h4><blockquote>Los clientes tienen opiniones divididas sobre la calidad del material de esta cama para mascotas. Algunos mencionan que tiene buenos materiales y una tela agradable, además de contar con una base de espuma bastante gruesa. Sin embargo, otros consideran que el material podría ser más resistente y que la tela es malísima, diferenciándose de lo mostrado en la foto del producto.</blockquote></div>
+  <div class="pcol s"><h4>受影响 SKU（10）</h4><div class="skul"><code>666UPGW321GD01</code> <span class=dim>B0GKNBKRS1</span><br><code>666UPGW321GN01</code> <span class=dim>B0GL21Q56X</span><br><code>666UPGW322GD01</code> <span class=dim>B0GKNLJWVZ</span><br><code>666UPGW322GN01</code> <span class=dim>B0GL1RTT3X</span><br><code>666UPGW323GD01</code> <span class=dim>B0GK7YNX6P</span><br><code>666UPGW323GN01</code> <span class=dim>B0GK8X55TC</span><br><code>666UPGW324GD01</code> <span class=dim>B0GKNSGGJ4</span><br><code>666UPGW324GN01</code> <span class=dim>B0GK9C4F6B</span><br><code>666UPGW325GD01</code> <span class=dim>B0GK97B4MR</span><br><code>666UPGW325GN01</code> <span class=dim>B0GK8BX7RM</span></div></div>
+ </div></div>
+<div class="note"><b>口径说明</b>
+<ul>
+<li>负面提及数由亚马逊平台直接给出（<code>negative</code> 字段），非 AI 推断情感倾向，可回溯。</li>
+<li><code>publicidad engañosa</code>（虚假宣传）是平台单独成列的主题，6 次提及全部为负面，判定最明确。</li>
+<li><code>apariencia</code>（外观）、<code>ajuste</code>（贴合）、<code>calidad del material</code>（材料质量）
+三个主题中的负面是"混合主题"——同一主题内既有图片不符的抱怨也有其他抱怨，此处计入的是整个主题的负面数，<b>属偏保守的高估</b>，实际纯图片不符占比会更低。</li>
+<li>同一父体下的变体共享同一份评论汇总，统计时已按父体去重；但「受影响 SKU」按父体下全部在售 SKU 回填，因为买家看到的是同一组主图。</li>
+</ul></div></div>
+
+<div class="block">
+<div class="bh"><i></i>三 · 父体 Listing 总览（含 BSR）</div>
+<div class="bs">按 BSR 升序。标红行为命中「图片不符」的父体</div>
+<div class="scroll"><table><thead><tr><th class="num">BSR</th><th>父 ASIN</th><th>标题</th>
+<th class="num">SKU数</th><th class="num">评分</th><th class="num">评论数</th><th class="num">月销</th>
+<th class="num">提及</th><th class="num">负面</th><th class="num">负面率</th>
+<th class="num">图片不符</th><th>负面 TOP3 主题</th></tr></thead>
+<tbody><tr>
+<td class="num"><b>#2</b><span class=dim>~#3</span></td>
+<td><code>B0F666T1C2</code></td>
+<td class="tt">Feandrea Cama para Perros Medianos, 76 x 51 x 18</td>
+<td class="num">9</td>
+<td class="num">4.4</td>
+<td class="num">729</td>
+<td class="num">1,239</td>
+<td class="num">256</td><td class="num">28</td>
+<td class="num r-lo"><b>10.9%</b></td>
+<td class="num"><span class=dim>0</span></td>
+<td class="th">calidad 10%, acolchado 50%, tamaño 9%</td></tr><tr>
+<td class="num"><b>#3</b><span class=dim>~#4</span></td>
+<td><code>B08DFVKB4V</code></td>
+<td class="tt">FEANDREA Cama de Perros, Alfombra de Felpa, Diám</td>
+<td class="num">15</td>
+<td class="num">4.3</td>
+<td class="num">5,994</td>
+<td class="num">504</td>
+<td class="num">770</td><td class="num">172</td>
+<td class="num r-mid"><b>22.3%</b></td>
+<td class="num"><span class=dim>0</span></td>
+<td class="th">relleno 75%, deformación 73%, apariencia 19%</td></tr><tr>
+<td class="num"><b>#5</b><span class=dim>~#7</span></td>
+<td><code>B0HGLC2G83</code></td>
+<td class="tt">FEANDREA Cama para Perros, Ortopédica con Espuma</td>
+<td class="num">7</td>
+<td class="num">4.6</td>
+<td class="num">982</td>
+<td class="num">605</td>
+<td class="num">378</td><td class="num">36</td>
+<td class="num r-lo"><b>9.5%</b></td>
+<td class="num"><span class=dim>0</span></td>
+<td class="th">durabilidad 55%, calidad 9%, tamaño 7%</td></tr><tr class=pic>
+<td class="num"><b>#13</b><span class=dim>~#23</span></td>
+<td><code>B0GMWY2S4C</code></td>
+<td class="tt">FEANDREA Cama Sofá para Perros y Mascotas, Silló</td>
+<td class="num">5</td>
+<td class="num">4.4</td>
+<td class="num">862</td>
+<td class="num">312</td>
+<td class="num">87</td><td class="num">19</td>
+<td class="num r-mid"><b>21.8%</b></td>
+<td class="num"><b class="r-hi">8</b></td>
+<td class="th">apariencia 31%, desmontable 80%, ajuste 67%</td></tr><tr class=pic>
+<td class="num"><b>#14</b><span class=dim>~#17</span></td>
+<td><code>B0HGF1MDBT</code></td>
+<td class="tt">FEANDREA Cama para Perros, M, Antideslizante y L</td>
+<td class="num">10</td>
+<td class="num">4.4</td>
+<td class="num">528</td>
+<td class="num">312</td>
+<td class="num">104</td><td class="num">8</td>
+<td class="num r-lo"><b>7.7%</b></td>
+<td class="num"><b class="r-hi">5</b></td>
+<td class="th">calidad del material 50%, calidad 2%, comodidad 6%</td></tr><tr>
+<td class="num"><b>#16</b><span class=dim>~#21</span></td>
+<td><code>B0F546277V</code></td>
+<td class="tt">Feandrea Cama Ortopédica para Perros, Sofá, 76 x</td>
+<td class="num">8</td>
+<td class="num">4.6</td>
+<td class="num">2,784</td>
+<td class="num">366</td>
+<td class="num">495</td><td class="num">45</td>
+<td class="num r-lo"><b>9.1%</b></td>
+<td class="num"><span class=dim>0</span></td>
+<td class="th">durabilidad 24%, suavidad 18%, tamaño 10%</td></tr><tr>
+<td class="num"><b>#17</b><span class=dim>~#24</span></td>
+<td><code>B0FSJ4N9HF</code></td>
+<td class="tt">FEANDREA Cama para Perros, Ortopédica Mediana, L</td>
+<td class="num">7</td>
+<td class="num">4.5</td>
+<td class="num">837</td>
+<td class="num">284</td>
+<td class="num">129</td><td class="num">23</td>
+<td class="num r-lo"><b>17.8%</b></td>
+<td class="num"><span class=dim>0</span></td>
+<td class="th">relleno 67%, calidad 11%, tamaño 24%</td></tr><tr>
+<td class="num"><b>#19</b><span class=dim>~#22</span></td>
+<td><code>B0FSKGCWK5</code></td>
+<td class="tt">FEANDREA Cama para Perros, 50 cm de Diámetro, Co</td>
+<td class="num">5</td>
+<td class="num">4.5</td>
+<td class="num">616</td>
+<td class="num">200</td>
+<td class="num">129</td><td class="num">17</td>
+<td class="num r-lo"><b>13.2%</b></td>
+<td class="num"><span class=dim>0</span></td>
+<td class="th">acolchado 78%, tamaño 20%, calidad 6%</td></tr><tr>
+<td class="num"><b>#53</b><span class=dim>~#67</span></td>
+<td><code>B0D7PS5X9J</code></td>
+<td class="tt">Feandrea Cama para Perros, Sofá para Perros, 76 </td>
+<td class="num">4</td>
+<td class="num">4.67</td>
+<td class="num">396</td>
+<td class="num">169</td>
+<td class="num">204</td><td class="num">9</td>
+<td class="num r-lo"><b>4.4%</b></td>
+<td class="num"><span class=dim>0</span></td>
+<td class="th">precio 17%, tamaño 5%, suavidad 7%</td></tr><tr>
+<td class="num"><b>#75</b><span class=dim>~#78</span></td>
+<td><code>B0D95KSRJN</code></td>
+<td class="tt">FEANDREA Cama para Perros, M, Bordes Elevados, 7</td>
+<td class="num">6</td>
+<td class="num">4.4</td>
+<td class="num">2,138</td>
+<td class="num">103</td>
+<td class="num">191</td><td class="num">50</td>
+<td class="num r-mid"><b>26.2%</b></td>
+<td class="num"><span class=dim>0</span></td>
+<td class="th">relleno 80%, firmeza 50%, calidad 19%</td></tr><tr>
+<td class="num"><b>#100</b></td>
+<td><code>B0D95JV18K</code></td>
+<td class="tt">FEANDREA Cama para Perros, Funda Protectora para</td>
+<td class="num">1</td>
+<td class="num">4.7</td>
+<td class="num">188</td>
+<td class="num">26</td>
+<td class="num">59</td><td class="num">11</td>
+<td class="num r-mid"><b>18.6%</b></td>
+<td class="num"><span class=dim>0</span></td>
+<td class="th">suavidad 28%, diseño 25%, relación calidad-precio 33%</td></tr><tr class=pic>
+<td class="num"><b>#121</b></td>
+<td><code>B0FSCCNJC2</code></td>
+<td class="tt">FEANDREA Cama para Perros, Felpa, Lavable, Antid</td>
+<td class="num">4</td>
+<td class="num">4.2</td>
+<td class="num">449</td>
+<td class="num">145</td>
+<td class="num">131</td><td class="num">45</td>
+<td class="num r-hi"><b>34.4%</b></td>
+<td class="num"><b class="r-hi">11</b></td>
+<td class="th">suavidad 50%, relación calidad-precio 50%, calidad 19%</td></tr><tr>
+<td class="num"><b>#408</b></td>
+<td><code>B0D95JHGQM</code></td>
+<td class="tt">FEANDREA Cama para Perros, 110 x 73 cm, Lavable </td>
+<td class="num">1</td>
+<td class="num">4.4</td>
+<td class="num">865</td>
+<td class="num">9</td>
+<td class="num">133</td><td class="num">18</td>
+<td class="num r-lo"><b>13.5%</b></td>
+<td class="num"><span class=dim>0</span></td>
+<td class="th">calidad 11%, suavidad 20%, grosor 44%</td></tr></tbody></table></div></div>
+
+<div class="block">
+<div class="bh"><i></i>四 · SKU 明细（82 行）</div>
+<div class="bs">SKU 映射打头，BSR / 评分 / 评论数 / 销量并列。负面率为该 SKU 所属父体的整体负面率</div>
+<div class="fbar"><button class="fb on" id="sall">全部 82</button>
+<button class="fb" id="spic">仅图片不符 19</button></div>
+<div class="scroll"><table id="tsku"><thead><tr><th>SKU</th><th>ASIN</th><th>父 ASIN</th>
+<th>国家Listing</th><th>子类目</th><th class="num">BSR</th><th class="num">评分</th>
+<th class="num">评论数</th><th class="num">月销</th><th class="num">年销</th><th class="num">价格</th>
+<th class="num">父体负面率</th><th>标记</th><th>最高负面主题</th></tr></thead>
+<tbody><tr data-pic="0">
+<td><code class="sk">666UPGW281G01</code></td>
+<td><code>B0DQW1YXG5</code></td>
+<td><code class=dim>B0F666T1C2</code></td>
+<td class=dim>UPGW281-284</td>
+<td>Camas</td>
+<td class="num"><b>#3</b></td>
+<td class="num">4.40</td>
+<td class="num">729</td>
+<td class="num">1,239</td>
+<td class="num">7,276</td>
+<td class="num">$600</td>
+<td class="num r-lo"><b>10.9%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">calidad <span class=dim>10%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW281GN01</code></td>
+<td><code>B0FMD5XRCW</code></td>
+<td><code class=dim>B0F666T1C2</code></td>
+<td class=dim>UPGW281-284</td>
+<td>Camas</td>
+<td class="num"><b>#2</b></td>
+<td class="num">4.40</td>
+<td class="num">725</td>
+<td class="num">1,239</td>
+<td class="num">7,276</td>
+<td class="num">$1993</td>
+<td class="num r-lo"><b>10.9%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">calidad <span class=dim>10%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW282G01</code></td>
+<td><code>B0DQW2DK7K</code></td>
+<td><code class=dim>B0F666T1C2</code></td>
+<td class=dim>UPGW281-284</td>
+<td>Camas</td>
+<td class="num"><b>#2</b></td>
+<td class="num">4.40</td>
+<td class="num">728</td>
+<td class="num">1,239</td>
+<td class="num">7,276</td>
+<td class="num">$750</td>
+<td class="num r-lo"><b>10.9%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">calidad <span class=dim>10%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW282GN01</code></td>
+<td><code>B0FMDHKH7N</code></td>
+<td><code class=dim>B0F666T1C2</code></td>
+<td class=dim>UPGW281-284</td>
+<td>Camas</td>
+<td class="num"><b>#2</b></td>
+<td class="num">4.40</td>
+<td class="num">725</td>
+<td class="num">1,239</td>
+<td class="num">7,276</td>
+<td class="num">$850</td>
+<td class="num r-lo"><b>10.9%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">calidad <span class=dim>10%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW283G01</code></td>
+<td><code>B0DQW54GVZ</code></td>
+<td><code class=dim>B0F666T1C2</code></td>
+<td class=dim>UPGW281-284</td>
+<td>Camas</td>
+<td class="num"><b>#2</b></td>
+<td class="num">4.40</td>
+<td class="num">725</td>
+<td class="num">1,239</td>
+<td class="num">7,276</td>
+<td class="num">$945</td>
+<td class="num r-lo"><b>10.9%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">calidad <span class=dim>10%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW283GN01</code></td>
+<td><code>B0GNCYX1YT</code></td>
+<td><code class=dim>B0F666T1C2</code></td>
+<td class=dim>UPGW281-284</td>
+<td>Camas</td>
+<td class="num"><b>#2</b></td>
+<td class="num">4.40</td>
+<td class="num">712</td>
+<td class="num">1,239</td>
+<td class="num">7,276</td>
+<td class="num">—</td>
+<td class="num r-lo"><b>10.9%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">calidad <span class=dim>10%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW284G01</code></td>
+<td><code>B0DQXNYPSV</code></td>
+<td><code class=dim>B0F666T1C2</code></td>
+<td class=dim>UPGW281-284</td>
+<td>Camas</td>
+<td class="num"><b>#2</b></td>
+<td class="num">4.40</td>
+<td class="num">725</td>
+<td class="num">1,239</td>
+<td class="num">7,276</td>
+<td class="num">$1400</td>
+<td class="num r-lo"><b>10.9%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">calidad <span class=dim>10%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW284GN01</code></td>
+<td><code>B0GNDDD84B</code></td>
+<td><code class=dim>B0F666T1C2</code></td>
+<td class=dim>UPGW281-284</td>
+<td>Camas</td>
+<td class="num"><b>#2</b></td>
+<td class="num">4.40</td>
+<td class="num">725</td>
+<td class="num">1,239</td>
+<td class="num">7,276</td>
+<td class="num">$1500</td>
+<td class="num r-lo"><b>10.9%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">calidad <span class=dim>10%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW285GD01</code></td>
+<td><code>B0GNDP9YKC</code></td>
+<td><code class=dim>B0F666T1C2</code></td>
+<td class=dim>UPGW281-284</td>
+<td>Camas</td>
+<td class="num"><b>#2</b></td>
+<td class="num">4.40</td>
+<td class="num">725</td>
+<td class="num">1,239</td>
+<td class="num">7,276</td>
+<td class="num">$1600</td>
+<td class="num r-lo"><b>10.9%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">calidad <span class=dim>10%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW036G01</code></td>
+<td><code>B0CVXKR39C</code></td>
+<td><code class=dim>B08DFVKB4V</code></td>
+<td class=dim>UPGW037-038-039-40</td>
+<td>Camas</td>
+<td class="num"><b>#4</b></td>
+<td class="num">4.30</td>
+<td class="num">5,938</td>
+<td class="num">0</td>
+<td class="num">6,755</td>
+<td class="num">—</td>
+<td class="num r-mid"><b>22.3%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">relleno <span class=dim>75%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW037G01</code></td>
+<td><code>B088BLYVQQ</code></td>
+<td><code class=dim>B08DFVKB4V</code></td>
+<td class=dim>UPGW037-038-039-40</td>
+<td>Camas</td>
+<td class="num"><b>#3</b></td>
+<td class="num">4.30</td>
+<td class="num">5,993</td>
+<td class="num">504</td>
+<td class="num">6,755</td>
+<td class="num">$300</td>
+<td class="num r-mid"><b>22.3%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">relleno <span class=dim>75%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW037G02</code></td>
+<td><code>B08HGS5LMP</code></td>
+<td><code class=dim>B08DFVKB4V</code></td>
+<td class=dim>UPGW037-038-039-40</td>
+<td>Camas</td>
+<td class="num"><b>#3</b></td>
+<td class="num">4.30</td>
+<td class="num">5,991</td>
+<td class="num">504</td>
+<td class="num">6,755</td>
+<td class="num">$300</td>
+<td class="num r-mid"><b>22.3%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">relleno <span class=dim>75%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW037S01</code></td>
+<td><code>B08P6MH7RR</code></td>
+<td><code class=dim>B08DFVKB4V</code></td>
+<td class=dim>UPGW037-038-039-40</td>
+<td>Camas</td>
+<td class="num"><b>#3</b></td>
+<td class="num">4.30</td>
+<td class="num">5,991</td>
+<td class="num">504</td>
+<td class="num">6,755</td>
+<td class="num">$340</td>
+<td class="num r-mid"><b>22.3%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">relleno <span class=dim>75%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW038G01</code></td>
+<td><code>B088BH2WLC</code></td>
+<td><code class=dim>B08DFVKB4V</code></td>
+<td class=dim>UPGW037-038-039-40</td>
+<td>Camas</td>
+<td class="num"><b>#4</b></td>
+<td class="num">4.30</td>
+<td class="num">5,994</td>
+<td class="num">504</td>
+<td class="num">6,755</td>
+<td class="num">$350</td>
+<td class="num r-mid"><b>22.3%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">relleno <span class=dim>75%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW038G02</code></td>
+<td><code>B08FT2NKG3</code></td>
+<td><code class=dim>B08DFVKB4V</code></td>
+<td class=dim>UPGW037-038-039-40</td>
+<td>Camas</td>
+<td class="num"><b>#3</b></td>
+<td class="num">4.30</td>
+<td class="num">5,991</td>
+<td class="num">504</td>
+<td class="num">6,755</td>
+<td class="num">$350</td>
+<td class="num r-mid"><b>22.3%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">relleno <span class=dim>75%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW038P01</code></td>
+<td><code>B0CVXLVSJP</code></td>
+<td><code class=dim>B08DFVKB4V</code></td>
+<td class=dim>UPGW037-038-039-40</td>
+<td>Camas</td>
+<td class="num"><b>#3</b></td>
+<td class="num">4.30</td>
+<td class="num">5,990</td>
+<td class="num">504</td>
+<td class="num">6,755</td>
+<td class="num">$400</td>
+<td class="num r-mid"><b>22.3%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">relleno <span class=dim>75%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW039G01</code></td>
+<td><code>B088BNR2NB</code></td>
+<td><code class=dim>B08DFVKB4V</code></td>
+<td class=dim>UPGW037-038-039-40</td>
+<td>Camas</td>
+<td class="num"><b>#3</b></td>
+<td class="num">4.30</td>
+<td class="num">5,991</td>
+<td class="num">504</td>
+<td class="num">6,755</td>
+<td class="num">$500</td>
+<td class="num r-mid"><b>22.3%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">relleno <span class=dim>75%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW039G02</code></td>
+<td><code>B08FSNT5JF</code></td>
+<td><code class=dim>B08DFVKB4V</code></td>
+<td class=dim>UPGW037-038-039-40</td>
+<td>Camas</td>
+<td class="num"><b>#3</b></td>
+<td class="num">4.30</td>
+<td class="num">5,991</td>
+<td class="num">504</td>
+<td class="num">6,755</td>
+<td class="num">$587</td>
+<td class="num r-mid"><b>22.3%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">relleno <span class=dim>75%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW039K01</code></td>
+<td><code>B0CVXL8ZKD</code></td>
+<td><code class=dim>B08DFVKB4V</code></td>
+<td class=dim>UPGW037-038-039-40</td>
+<td>Camas</td>
+<td class="num"><b>#3</b></td>
+<td class="num">4.30</td>
+<td class="num">5,981</td>
+<td class="num">504</td>
+<td class="num">6,755</td>
+<td class="num">—</td>
+<td class="num r-mid"><b>22.3%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">relleno <span class=dim>75%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW039P01</code></td>
+<td><code>B0CVXMQV8H</code></td>
+<td><code class=dim>B08DFVKB4V</code></td>
+<td class=dim>UPGW037-038-039-40</td>
+<td>Camas</td>
+<td class="num"><b>#3</b></td>
+<td class="num">4.30</td>
+<td class="num">5,991</td>
+<td class="num">504</td>
+<td class="num">6,755</td>
+<td class="num">$500</td>
+<td class="num r-mid"><b>22.3%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">relleno <span class=dim>75%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW040G01</code></td>
+<td><code>B08FT377WB</code></td>
+<td><code class=dim>B08DFVKB4V</code></td>
+<td class=dim>UPGW037-038-039-40</td>
+<td>Camas</td>
+<td class="num"><b>#3</b></td>
+<td class="num">4.30</td>
+<td class="num">5,991</td>
+<td class="num">504</td>
+<td class="num">6,755</td>
+<td class="num">$700</td>
+<td class="num r-mid"><b>22.3%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">relleno <span class=dim>75%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW040G02</code></td>
+<td><code>B08FSZM34Z</code></td>
+<td><code class=dim>B08DFVKB4V</code></td>
+<td class=dim>UPGW037-038-039-40</td>
+<td>Camas</td>
+<td class="num"><b>#3</b></td>
+<td class="num">4.30</td>
+<td class="num">5,991</td>
+<td class="num">504</td>
+<td class="num">6,755</td>
+<td class="num">$700</td>
+<td class="num r-mid"><b>22.3%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">relleno <span class=dim>75%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW042G01</code></td>
+<td><code>B0CVXH579N</code></td>
+<td><code class=dim>B08DFVKB4V</code></td>
+<td class=dim>UPGW037-038-039-40</td>
+<td>Camas</td>
+<td class="num"><b>#3</b></td>
+<td class="num">4.30</td>
+<td class="num">5,991</td>
+<td class="num">504</td>
+<td class="num">6,755</td>
+<td class="num">$740</td>
+<td class="num r-mid"><b>22.3%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">relleno <span class=dim>75%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW042G02</code></td>
+<td><code>B09WV3ZTT7</code></td>
+<td><code class=dim>B08DFVKB4V</code></td>
+<td class=dim>UPGW037-038-039-40</td>
+<td>Camas</td>
+<td class="num"><b>#3</b></td>
+<td class="num">4.30</td>
+<td class="num">5,991</td>
+<td class="num">504</td>
+<td class="num">6,755</td>
+<td class="num">$1589</td>
+<td class="num r-mid"><b>22.3%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">relleno <span class=dim>75%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW251G01</code></td>
+<td><code>B0D14747J7</code></td>
+<td><code class=dim>B0HGLC2G83</code></td>
+<td class=dim>UPGW251-254</td>
+<td>Camas</td>
+<td class="num"><b>#7</b></td>
+<td class="num">4.60</td>
+<td class="num">982</td>
+<td class="num">605</td>
+<td class="num">8,590</td>
+<td class="num">$700</td>
+<td class="num r-lo"><b>9.5%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">durabilidad <span class=dim>55%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW252G01</code></td>
+<td><code>B0D142MQ8T</code></td>
+<td><code class=dim>B0HGLC2G83</code></td>
+<td class=dim>UPGW251-254</td>
+<td>Camas</td>
+<td class="num"><b>#5</b></td>
+<td class="num">4.60</td>
+<td class="num">982</td>
+<td class="num">605</td>
+<td class="num">8,590</td>
+<td class="num">$900</td>
+<td class="num r-lo"><b>9.5%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">durabilidad <span class=dim>55%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW252G02</code></td>
+<td><code>B0D142ZTDW</code></td>
+<td><code class=dim>B0HGLC2G83</code></td>
+<td class=dim>UPGW251-254</td>
+<td>Camas</td>
+<td class="num"><b>#5</b></td>
+<td class="num">4.60</td>
+<td class="num">981</td>
+<td class="num">605</td>
+<td class="num">8,590</td>
+<td class="num">$900</td>
+<td class="num r-lo"><b>9.5%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">durabilidad <span class=dim>55%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW253G01</code></td>
+<td><code>B0D13S3C8V</code></td>
+<td><code class=dim>B0HGLC2G83</code></td>
+<td class=dim>UPGW251-254</td>
+<td>Camas</td>
+<td class="num"><b>#5</b></td>
+<td class="num">4.60</td>
+<td class="num">981</td>
+<td class="num">605</td>
+<td class="num">8,590</td>
+<td class="num">$1000</td>
+<td class="num r-lo"><b>9.5%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">durabilidad <span class=dim>55%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW253G02</code></td>
+<td><code>B0D13WHSKW</code></td>
+<td><code class=dim>B0HGLC2G83</code></td>
+<td class=dim>UPGW251-254</td>
+<td>Camas</td>
+<td class="num"><b>#5</b></td>
+<td class="num">4.60</td>
+<td class="num">981</td>
+<td class="num">605</td>
+<td class="num">8,590</td>
+<td class="num">$1100</td>
+<td class="num r-lo"><b>9.5%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">durabilidad <span class=dim>55%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW254G01</code></td>
+<td><code>B0D145LGH6</code></td>
+<td><code class=dim>B0HGLC2G83</code></td>
+<td class=dim>UPGW251-254</td>
+<td>Camas</td>
+<td class="num"><b>#5</b></td>
+<td class="num">4.60</td>
+<td class="num">981</td>
+<td class="num">605</td>
+<td class="num">8,590</td>
+<td class="num">$1155</td>
+<td class="num r-lo"><b>9.5%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">durabilidad <span class=dim>55%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW254G02</code></td>
+<td><code>B0D145BH1Z</code></td>
+<td><code class=dim>B0HGLC2G83</code></td>
+<td class=dim>UPGW251-254</td>
+<td>Camas</td>
+<td class="num"><b>#5</b></td>
+<td class="num">4.60</td>
+<td class="num">981</td>
+<td class="num">605</td>
+<td class="num">8,590</td>
+<td class="num">$1200</td>
+<td class="num r-lo"><b>9.5%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">durabilidad <span class=dim>55%</span></td></tr><tr data-pic="1">
+<td><code class="sk">666UPGW271G01</code></td>
+<td><code>B0DM8P63N8</code></td>
+<td><code class=dim>B0GMWY2S4C</code></td>
+<td class=dim>PGW271-274</td>
+<td>Camas</td>
+<td class="num"><b>#23</b></td>
+<td class="num">4.4</td>
+<td class="num">861</td>
+<td class="num">312</td>
+<td class="num">1,289</td>
+<td class="num">$1205</td>
+<td class="num r-mid"><b>21.8%</b></td>
+<td><span class=chip-pic>图片不符</span></td>
+<td class="th">apariencia <span class=dim>31%</span></td></tr><tr data-pic="1">
+<td><code class="sk">666UPGW271GR01</code></td>
+<td><code>B0FDPHSDQ4</code></td>
+<td><code class=dim>B0GMWY2S4C</code></td>
+<td class=dim>PGW271-274</td>
+<td>Camas</td>
+<td class="num"><b>#23</b></td>
+<td class="num">4.4</td>
+<td class="num">861</td>
+<td class="num">312</td>
+<td class="num">1,289</td>
+<td class="num">—</td>
+<td class="num r-mid"><b>21.8%</b></td>
+<td><span class=chip-pic>图片不符</span></td>
+<td class="th">apariencia <span class=dim>31%</span></td></tr><tr data-pic="1">
+<td><code class="sk">666UPGW272G01</code></td>
+<td><code>B0DM8JM7GC</code></td>
+<td><code class=dim>B0GMWY2S4C</code></td>
+<td class=dim>PGW271-274</td>
+<td>Camas</td>
+<td class="num"><b>#13</b></td>
+<td class="num">4.4</td>
+<td class="num">861</td>
+<td class="num">312</td>
+<td class="num">1,289</td>
+<td class="num">$550</td>
+<td class="num r-mid"><b>21.8%</b></td>
+<td><span class=chip-pic>图片不符</span></td>
+<td class="th">apariencia <span class=dim>31%</span></td></tr><tr data-pic="1">
+<td><code class="sk">666UPGW273G01</code></td>
+<td><code>B0DM8LNKF8</code></td>
+<td><code class=dim>B0GMWY2S4C</code></td>
+<td class=dim>PGW271-274</td>
+<td>Camas</td>
+<td class="num"><b>#22</b></td>
+<td class="num">4.4</td>
+<td class="num">862</td>
+<td class="num">312</td>
+<td class="num">1,289</td>
+<td class="num">$600</td>
+<td class="num r-mid"><b>21.8%</b></td>
+<td><span class=chip-pic>图片不符</span></td>
+<td class="th">apariencia <span class=dim>31%</span></td></tr><tr data-pic="1">
+<td><code class="sk">666UPGW274GA01</code></td>
+<td><code>B0FDQDYTHH</code></td>
+<td><code class=dim>B0GMWY2S4C</code></td>
+<td class=dim>PGW271-274</td>
+<td>Camas</td>
+<td class="num"><b>#13</b></td>
+<td class="num">4.4</td>
+<td class="num">861</td>
+<td class="num">312</td>
+<td class="num">1,289</td>
+<td class="num">$700</td>
+<td class="num r-mid"><b>21.8%</b></td>
+<td><span class=chip-pic>图片不符</span></td>
+<td class="th">apariencia <span class=dim>31%</span></td></tr><tr data-pic="1">
+<td><code class="sk">666UPGW321GD01</code></td>
+<td><code>B0GKNBKRS1</code></td>
+<td><code class=dim>B0HGF1MDBT</code></td>
+<td class=dim>PGW321-325</td>
+<td>Camas</td>
+<td class="num"><b>#16</b></td>
+<td class="num">4.40</td>
+<td class="num">455</td>
+<td class="num">312</td>
+<td class="num">1,258</td>
+<td class="num">—</td>
+<td class="num r-lo"><b>7.7%</b></td>
+<td><span class=chip-pic>图片不符</span></td>
+<td class="th">calidad del material <span class=dim>50%</span></td></tr><tr data-pic="1">
+<td><code class="sk">666UPGW321GN01</code></td>
+<td><code>B0GL21Q56X</code></td>
+<td><code class=dim>B0HGF1MDBT</code></td>
+<td class=dim>PGW321-325</td>
+<td>Camas</td>
+<td class="num"><b>#17</b></td>
+<td class="num">4.40</td>
+<td class="num">524</td>
+<td class="num">312</td>
+<td class="num">1,258</td>
+<td class="num">$600</td>
+<td class="num r-lo"><b>7.7%</b></td>
+<td><span class=chip-pic>图片不符</span></td>
+<td class="th">calidad del material <span class=dim>50%</span></td></tr><tr data-pic="1">
+<td><code class="sk">666UPGW322GD01</code></td>
+<td><code>B0GKNLJWVZ</code></td>
+<td><code class=dim>B0HGF1MDBT</code></td>
+<td class=dim>PGW321-325</td>
+<td>Camas</td>
+<td class="num"><b>#16</b></td>
+<td class="num">4.40</td>
+<td class="num">528</td>
+<td class="num">312</td>
+<td class="num">1,258</td>
+<td class="num">$720</td>
+<td class="num r-lo"><b>7.7%</b></td>
+<td><span class=chip-pic>图片不符</span></td>
+<td class="th">calidad del material <span class=dim>50%</span></td></tr><tr data-pic="1">
+<td><code class="sk">666UPGW322GN01</code></td>
+<td><code>B0GL1RTT3X</code></td>
+<td><code class=dim>B0HGF1MDBT</code></td>
+<td class=dim>PGW321-325</td>
+<td>Camas</td>
+<td class="num"><b>#16</b></td>
+<td class="num">4.40</td>
+<td class="num">524</td>
+<td class="num">312</td>
+<td class="num">1,258</td>
+<td class="num">$800</td>
+<td class="num r-lo"><b>7.7%</b></td>
+<td><span class=chip-pic>图片不符</span></td>
+<td class="th">calidad del material <span class=dim>50%</span></td></tr><tr data-pic="1">
+<td><code class="sk">666UPGW323GD01</code></td>
+<td><code>B0GK7YNX6P</code></td>
+<td><code class=dim>B0HGF1MDBT</code></td>
+<td class=dim>PGW321-325</td>
+<td>Camas</td>
+<td class="num"><b>#14</b></td>
+<td class="num">4.40</td>
+<td class="num">524</td>
+<td class="num">312</td>
+<td class="num">1,258</td>
+<td class="num">$900</td>
+<td class="num r-lo"><b>7.7%</b></td>
+<td><span class=chip-pic>图片不符</span></td>
+<td class="th">calidad del material <span class=dim>50%</span></td></tr><tr data-pic="1">
+<td><code class="sk">666UPGW323GN01</code></td>
+<td><code>B0GK8X55TC</code></td>
+<td><code class=dim>B0HGF1MDBT</code></td>
+<td class=dim>PGW321-325</td>
+<td>Camas</td>
+<td class="num"><b>#17</b></td>
+<td class="num">4.40</td>
+<td class="num">527</td>
+<td class="num">312</td>
+<td class="num">1,258</td>
+<td class="num">$900</td>
+<td class="num r-lo"><b>7.7%</b></td>
+<td><span class=chip-pic>图片不符</span></td>
+<td class="th">calidad del material <span class=dim>50%</span></td></tr><tr data-pic="1">
+<td><code class="sk">666UPGW324GD01</code></td>
+<td><code>B0GKNSGGJ4</code></td>
+<td><code class=dim>B0HGF1MDBT</code></td>
+<td class=dim>PGW321-325</td>
+<td>Camas</td>
+<td class="num"><b>#16</b></td>
+<td class="num">4.40</td>
+<td class="num">524</td>
+<td class="num">312</td>
+<td class="num">1,258</td>
+<td class="num">$1200</td>
+<td class="num r-lo"><b>7.7%</b></td>
+<td><span class=chip-pic>图片不符</span></td>
+<td class="th">calidad del material <span class=dim>50%</span></td></tr><tr data-pic="1">
+<td><code class="sk">666UPGW324GN01</code></td>
+<td><code>B0GK9C4F6B</code></td>
+<td><code class=dim>B0HGF1MDBT</code></td>
+<td class=dim>PGW321-325</td>
+<td>Camas</td>
+<td class="num"><b>#17</b></td>
+<td class="num">4.40</td>
+<td class="num">524</td>
+<td class="num">312</td>
+<td class="num">1,258</td>
+<td class="num">—</td>
+<td class="num r-lo"><b>7.7%</b></td>
+<td><span class=chip-pic>图片不符</span></td>
+<td class="th">calidad del material <span class=dim>50%</span></td></tr><tr data-pic="1">
+<td><code class="sk">666UPGW325GD01</code></td>
+<td><code>B0GK97B4MR</code></td>
+<td><code class=dim>B0HGF1MDBT</code></td>
+<td class=dim>PGW321-325</td>
+<td>Camas</td>
+<td class="num"><b>#16</b></td>
+<td class="num">4.40</td>
+<td class="num">524</td>
+<td class="num">312</td>
+<td class="num">1,258</td>
+<td class="num">$1400</td>
+<td class="num r-lo"><b>7.7%</b></td>
+<td><span class=chip-pic>图片不符</span></td>
+<td class="th">calidad del material <span class=dim>50%</span></td></tr><tr data-pic="1">
+<td><code class="sk">666UPGW325GN01</code></td>
+<td><code>B0GK8BX7RM</code></td>
+<td><code class=dim>B0HGF1MDBT</code></td>
+<td class=dim>PGW321-325</td>
+<td>Camas</td>
+<td class="num"><b>#16</b></td>
+<td class="num">4.40</td>
+<td class="num">524</td>
+<td class="num">312</td>
+<td class="num">1,258</td>
+<td class="num">$1400</td>
+<td class="num r-lo"><b>7.7%</b></td>
+<td><span class=chip-pic>图片不符</span></td>
+<td class="th">calidad del material <span class=dim>50%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW066G01</code></td>
+<td><code>B088BNNM6L</code></td>
+<td><code class=dim>B0F546277V</code></td>
+<td class=dim>UPGW066-67</td>
+<td>Camas</td>
+<td class="num"><b>#16</b></td>
+<td class="num">4.60</td>
+<td class="num">2,784</td>
+<td class="num">366</td>
+<td class="num">4,095</td>
+<td class="num">$630</td>
+<td class="num r-lo"><b>9.1%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">durabilidad <span class=dim>24%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW066G02</code></td>
+<td><code>B08M96KDGC</code></td>
+<td><code class=dim>B0F546277V</code></td>
+<td class=dim>UPGW066-67</td>
+<td>Camas</td>
+<td class="num"><b>#21</b></td>
+<td class="num">4.60</td>
+<td class="num">2,784</td>
+<td class="num">366</td>
+<td class="num">4,095</td>
+<td class="num">—</td>
+<td class="num r-lo"><b>9.1%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">durabilidad <span class=dim>24%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW067G01</code></td>
+<td><code>B088BDQDXG</code></td>
+<td><code class=dim>B0F546277V</code></td>
+<td class=dim>UPGW066-67</td>
+<td>Camas</td>
+<td class="num"><b>#21</b></td>
+<td class="num">4.60</td>
+<td class="num">2,784</td>
+<td class="num">366</td>
+<td class="num">4,095</td>
+<td class="num">$837</td>
+<td class="num r-lo"><b>9.1%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">durabilidad <span class=dim>24%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW067G02</code></td>
+<td><code>B08M98HP3F</code></td>
+<td><code class=dim>B0F546277V</code></td>
+<td class=dim>UPGW066-67</td>
+<td>Camas</td>
+<td class="num"><b>#16</b></td>
+<td class="num">4.60</td>
+<td class="num">2,784</td>
+<td class="num">366</td>
+<td class="num">4,095</td>
+<td class="num">$1000</td>
+<td class="num r-lo"><b>9.1%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">durabilidad <span class=dim>24%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW068G01</code></td>
+<td><code>B088BBCQCF</code></td>
+<td><code class=dim>B0F546277V</code></td>
+<td class=dim>UPGW066-67</td>
+<td>Camas</td>
+<td class="num"><b>#20</b></td>
+<td class="num">4.60</td>
+<td class="num">2,784</td>
+<td class="num">366</td>
+<td class="num">4,095</td>
+<td class="num">$1049</td>
+<td class="num r-lo"><b>9.1%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">durabilidad <span class=dim>24%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW068G02</code></td>
+<td><code>B08M997LXH</code></td>
+<td><code class=dim>B0F546277V</code></td>
+<td class=dim>UPGW066-67</td>
+<td>Camas</td>
+<td class="num"><b>#16</b></td>
+<td class="num">4.60</td>
+<td class="num">2,784</td>
+<td class="num">366</td>
+<td class="num">4,095</td>
+<td class="num">$1200</td>
+<td class="num r-lo"><b>9.1%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">durabilidad <span class=dim>24%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW077G01V1</code></td>
+<td><code>B0D4YFC8FT</code></td>
+<td><code class=dim>B0F546277V</code></td>
+<td class=dim>UPGW066-67</td>
+<td>Camas</td>
+<td class="num"><b>#16</b></td>
+<td class="num">4.60</td>
+<td class="num">2,784</td>
+<td class="num">366</td>
+<td class="num">4,095</td>
+<td class="num">$1150</td>
+<td class="num r-lo"><b>9.1%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">durabilidad <span class=dim>24%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW078G01V1</code></td>
+<td><code>B0D4YV8559</code></td>
+<td><code class=dim>B0F546277V</code></td>
+<td class=dim>UPGW066-67</td>
+<td>Camas</td>
+<td class="num"><b>#16</b></td>
+<td class="num">4.60</td>
+<td class="num">2,784</td>
+<td class="num">366</td>
+<td class="num">4,095</td>
+<td class="num">$1500</td>
+<td class="num r-lo"><b>9.1%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">durabilidad <span class=dim>24%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW311GD01</code></td>
+<td><code>B0FCLG8VSY</code></td>
+<td><code class=dim>B0FSJ4N9HF</code></td>
+<td class=dim>PGW311-313</td>
+<td>Camas</td>
+<td class="num"><b>#24</b></td>
+<td class="num">4.50</td>
+<td class="num">834</td>
+<td class="num">284</td>
+<td class="num">3,242</td>
+<td class="num">$472</td>
+<td class="num r-lo"><b>17.8%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">relleno <span class=dim>67%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW311GN01</code></td>
+<td><code>B0GJSX5CYP</code></td>
+<td><code class=dim>B0FSJ4N9HF</code></td>
+<td class=dim>PGW311-313</td>
+<td>Camas</td>
+<td class="num"><b>#17</b></td>
+<td class="num">4.5</td>
+<td class="num">836</td>
+<td class="num">284</td>
+<td class="num">3,242</td>
+<td class="num">—</td>
+<td class="num r-lo"><b>17.8%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">relleno <span class=dim>67%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW312GD01</code></td>
+<td><code>B0FCLBMSN4</code></td>
+<td><code class=dim>B0FSJ4N9HF</code></td>
+<td class=dim>PGW311-313</td>
+<td>Camas</td>
+<td class="num"><b>#17</b></td>
+<td class="num">4.5</td>
+<td class="num">834</td>
+<td class="num">284</td>
+<td class="num">3,242</td>
+<td class="num">—</td>
+<td class="num r-lo"><b>17.8%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">relleno <span class=dim>67%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW312GN01</code></td>
+<td><code>B0GJZTDVD8</code></td>
+<td><code class=dim>B0FSJ4N9HF</code></td>
+<td class=dim>PGW311-313</td>
+<td>Camas</td>
+<td class="num"><b>#24</b></td>
+<td class="num">4.5</td>
+<td class="num">834</td>
+<td class="num">284</td>
+<td class="num">3,242</td>
+<td class="num">$1401</td>
+<td class="num r-lo"><b>17.8%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">relleno <span class=dim>67%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW313GD01</code></td>
+<td><code>B0FCFR5THS</code></td>
+<td><code class=dim>B0FSJ4N9HF</code></td>
+<td class=dim>PGW311-313</td>
+<td>Camas</td>
+<td class="num"><b>#24</b></td>
+<td class="num">4.5</td>
+<td class="num">837</td>
+<td class="num">284</td>
+<td class="num">3,242</td>
+<td class="num">$700</td>
+<td class="num r-lo"><b>17.8%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">relleno <span class=dim>67%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW313GN01</code></td>
+<td><code>B0GKZWM8SX</code></td>
+<td><code class=dim>B0FSJ4N9HF</code></td>
+<td class=dim>PGW311-313</td>
+<td>Camas</td>
+<td class="num"><b>#17</b></td>
+<td class="num">4.5</td>
+<td class="num">834</td>
+<td class="num">284</td>
+<td class="num">3,242</td>
+<td class="num">$700</td>
+<td class="num r-lo"><b>17.8%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">relleno <span class=dim>67%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW314GD01</code></td>
+<td><code>B0FCF89LQD</code></td>
+<td><code class=dim>B0FSJ4N9HF</code></td>
+<td class=dim>PGW311-313</td>
+<td>Camas</td>
+<td class="num"><b>#24</b></td>
+<td class="num">4.5</td>
+<td class="num">834</td>
+<td class="num">284</td>
+<td class="num">3,242</td>
+<td class="num">$1000</td>
+<td class="num r-lo"><b>17.8%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">relleno <span class=dim>67%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW301GD01</code></td>
+<td><code>B0FCF8FSW3</code></td>
+<td><code class=dim>B0FSKGCWK5</code></td>
+<td class=dim>PGW301-306</td>
+<td>Camas</td>
+<td class="num"><b>#22</b></td>
+<td class="num">4.5</td>
+<td class="num">616</td>
+<td class="num">200</td>
+<td class="num">2,586</td>
+<td class="num">$400</td>
+<td class="num r-lo"><b>13.2%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">acolchado <span class=dim>78%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW302GD01</code></td>
+<td><code>B0FCF9R66X</code></td>
+<td><code class=dim>B0FSKGCWK5</code></td>
+<td class=dim>PGW301-306</td>
+<td>Camas</td>
+<td class="num"><b>#19</b></td>
+<td class="num">4.5</td>
+<td class="num">616</td>
+<td class="num">200</td>
+<td class="num">2,586</td>
+<td class="num">$440</td>
+<td class="num r-lo"><b>13.2%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">acolchado <span class=dim>78%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW303GD01</code></td>
+<td><code>B0FCF7JW8M</code></td>
+<td><code class=dim>B0FSKGCWK5</code></td>
+<td class=dim>PGW301-306</td>
+<td>Camas</td>
+<td class="num"><b>#22</b></td>
+<td class="num">4.5</td>
+<td class="num">616</td>
+<td class="num">200</td>
+<td class="num">2,586</td>
+<td class="num">$500</td>
+<td class="num r-lo"><b>13.2%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">acolchado <span class=dim>78%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW304GD01</code></td>
+<td><code>B0FCFBX4ZP</code></td>
+<td><code class=dim>B0FSKGCWK5</code></td>
+<td class=dim>PGW301-306</td>
+<td>Camas</td>
+<td class="num"><b>#22</b></td>
+<td class="num">4.5</td>
+<td class="num">614</td>
+<td class="num">200</td>
+<td class="num">2,586</td>
+<td class="num">—</td>
+<td class="num r-lo"><b>13.2%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">acolchado <span class=dim>78%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW306GD01</code></td>
+<td><code>B0FCFB5X53</code></td>
+<td><code class=dim>B0FSKGCWK5</code></td>
+<td class=dim>PGW301-306</td>
+<td>Camas</td>
+<td class="num"><b>#22</b></td>
+<td class="num">4.5</td>
+<td class="num">614</td>
+<td class="num">200</td>
+<td class="num">2,586</td>
+<td class="num">$759</td>
+<td class="num r-lo"><b>13.2%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">acolchado <span class=dim>78%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW231G01</code></td>
+<td><code>B0CVXN4NY9</code></td>
+<td><code class=dim>B0D7PS5X9J</code></td>
+<td class=dim>UPGW23</td>
+<td>Camas</td>
+<td class="num"><b>#53</b></td>
+<td class="num">4.70</td>
+<td class="num">396</td>
+<td class="num">161</td>
+<td class="num">1,395</td>
+<td class="num">$504</td>
+<td class="num r-lo"><b>4.4%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">precio <span class=dim>17%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW232G01</code></td>
+<td><code>B0CVXCQ2M8</code></td>
+<td><code class=dim>B0D7PS5X9J</code></td>
+<td class=dim>UPGW23</td>
+<td>Camas</td>
+<td class="num"><b>#67</b></td>
+<td class="num">4.60</td>
+<td class="num">394</td>
+<td class="num">169</td>
+<td class="num">1,395</td>
+<td class="num">$629</td>
+<td class="num r-lo"><b>4.4%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">precio <span class=dim>17%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW233G01</code></td>
+<td><code>B0CVXLL8WC</code></td>
+<td><code class=dim>B0D7PS5X9J</code></td>
+<td class=dim>UPGW23</td>
+<td>Camas</td>
+<td class="num"><b>#67</b></td>
+<td class="num">4.70</td>
+<td class="num">396</td>
+<td class="num">161</td>
+<td class="num">1,395</td>
+<td class="num">$734</td>
+<td class="num r-lo"><b>4.4%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">precio <span class=dim>17%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW234G01</code></td>
+<td><code>B0CVXN1P6C</code></td>
+<td><code class=dim>B0D7PS5X9J</code></td>
+<td class=dim>UPGW23</td>
+<td>Camas</td>
+<td class="num"><b>#59</b></td>
+<td class="num">4.70</td>
+<td class="num">378</td>
+<td class="num">161</td>
+<td class="num">1,395</td>
+<td class="num">—</td>
+<td class="num r-lo"><b>4.4%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">precio <span class=dim>17%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW010G01</code></td>
+<td><code>B08BC4WWDW</code></td>
+<td><code class=dim>B0D95KSRJN</code></td>
+<td class=dim>PGW010-12</td>
+<td>Camas</td>
+<td class="num"><b>#75</b></td>
+<td class="num">4.4</td>
+<td class="num">2,138</td>
+<td class="num">102</td>
+<td class="num">1,914</td>
+<td class="num">$600</td>
+<td class="num r-mid"><b>26.2%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">relleno <span class=dim>80%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW011G01</code></td>
+<td><code>B08BC7CWST</code></td>
+<td><code class=dim>B0D95KSRJN</code></td>
+<td class=dim>PGW010-12</td>
+<td>Camas</td>
+<td class="num"><b>#75</b></td>
+<td class="num">4.4</td>
+<td class="num">2,135</td>
+<td class="num">102</td>
+<td class="num">1,914</td>
+<td class="num">$700</td>
+<td class="num r-mid"><b>26.2%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">relleno <span class=dim>80%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW012G01</code></td>
+<td><code>B0CVXKGZT6</code></td>
+<td><code class=dim>B0D95KSRJN</code></td>
+<td class=dim>PGW010-12</td>
+<td>Camas</td>
+<td class="num"><b>#78</b></td>
+<td class="num">4.4</td>
+<td class="num">2,135</td>
+<td class="num">102</td>
+<td class="num">1,914</td>
+<td class="num">$900</td>
+<td class="num r-mid"><b>26.2%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">relleno <span class=dim>80%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW10GG</code></td>
+<td><code>B0CVXLJWPV</code></td>
+<td><code class=dim>B0D95KSRJN</code></td>
+<td class=dim>PGW010-12</td>
+<td>Camas</td>
+<td class="num"><b>#75</b></td>
+<td class="num">4.4</td>
+<td class="num">2,135</td>
+<td class="num">102</td>
+<td class="num">1,914</td>
+<td class="num">$650</td>
+<td class="num r-mid"><b>26.2%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">relleno <span class=dim>80%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW11GG</code></td>
+<td><code>B08624YVJ5</code></td>
+<td><code class=dim>B0D95KSRJN</code></td>
+<td class=dim>PGW010-12</td>
+<td>Camas</td>
+<td class="num"><b>#75</b></td>
+<td class="num">4.4</td>
+<td class="num">2,119</td>
+<td class="num">103</td>
+<td class="num">1,914</td>
+<td class="num">—</td>
+<td class="num r-mid"><b>26.2%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">relleno <span class=dim>80%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW12GG</code></td>
+<td><code>B0CVXM23JG</code></td>
+<td><code class=dim>B0D95KSRJN</code></td>
+<td class=dim>PGW010-12</td>
+<td>Camas</td>
+<td class="num"><b>#75</b></td>
+<td class="num">4.4</td>
+<td class="num">2,135</td>
+<td class="num">102</td>
+<td class="num">1,914</td>
+<td class="num">$900</td>
+<td class="num r-mid"><b>26.2%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">relleno <span class=dim>80%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW221G02</code></td>
+<td><code>B0CVXLWS3Q</code></td>
+<td><code class=dim>B0D95JV18K</code></td>
+<td class=dim>UPGW221-224</td>
+<td>Camas</td>
+<td class="num"><b>#100</b></td>
+<td class="num">4.70</td>
+<td class="num">188</td>
+<td class="num">26</td>
+<td class="num">153</td>
+<td class="num">$300</td>
+<td class="num r-mid"><b>18.6%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">suavidad <span class=dim>28%</span></td></tr><tr data-pic="1">
+<td><code class="sk">666UPGW291GN01</code></td>
+<td><code>B0F6C26LMW</code></td>
+<td><code class=dim>B0FSCCNJC2</code></td>
+<td class=dim>PGW291-294</td>
+<td>Camas</td>
+<td class="num"><b>#121</b></td>
+<td class="num">4.2</td>
+<td class="num">444</td>
+<td class="num">145</td>
+<td class="num">2,429</td>
+<td class="num">—</td>
+<td class="num r-hi"><b>34.4%</b></td>
+<td><span class=chip-pic>图片不符</span></td>
+<td class="th">suavidad <span class=dim>50%</span></td></tr><tr data-pic="1">
+<td><code class="sk">666UPGW292GN01</code></td>
+<td><code>B0F6CD59CH</code></td>
+<td><code class=dim>B0FSCCNJC2</code></td>
+<td class=dim>PGW291-294</td>
+<td>Camas</td>
+<td class="num"><b>#121</b></td>
+<td class="num">4.2</td>
+<td class="num">449</td>
+<td class="num">145</td>
+<td class="num">2,429</td>
+<td class="num">$522</td>
+<td class="num r-hi"><b>34.4%</b></td>
+<td><span class=chip-pic>图片不符</span></td>
+<td class="th">suavidad <span class=dim>50%</span></td></tr><tr data-pic="1">
+<td><code class="sk">666UPGW293GN01</code></td>
+<td><code>B0F6BPF249</code></td>
+<td><code class=dim>B0FSCCNJC2</code></td>
+<td class=dim>PGW291-294</td>
+<td>Camas</td>
+<td class="num"><b>#121</b></td>
+<td class="num">4.2</td>
+<td class="num">404</td>
+<td class="num">0</td>
+<td class="num">2,429</td>
+<td class="num">—</td>
+<td class="num r-hi"><b>34.4%</b></td>
+<td><span class=chip-pic>图片不符</span></td>
+<td class="th">suavidad <span class=dim>50%</span></td></tr><tr data-pic="1">
+<td><code class="sk">666UPGW294GN01</code></td>
+<td><code>B0F6BFZMGP</code></td>
+<td><code class=dim>B0FSCCNJC2</code></td>
+<td class=dim>PGW291-294</td>
+<td>Camas</td>
+<td class="num"><b>#121</b></td>
+<td class="num">4.2</td>
+<td class="num">444</td>
+<td class="num">145</td>
+<td class="num">2,429</td>
+<td class="num">—</td>
+<td class="num r-hi"><b>34.4%</b></td>
+<td><span class=chip-pic>图片不符</span></td>
+<td class="th">suavidad <span class=dim>50%</span></td></tr><tr data-pic="0">
+<td><code class="sk">666UPGW203G01</code></td>
+<td><code>B0CVXKFDNK</code></td>
+<td><code class=dim>B0D95JHGQM</code></td>
+<td class=dim>PGW201-204</td>
+<td>Camas</td>
+<td class="num"><b>#408</b></td>
+<td class="num">4.4</td>
+<td class="num">865</td>
+<td class="num">9</td>
+<td class="num">72</td>
+<td class="num">—</td>
+<td class="num r-lo"><b>13.5%</b></td>
+<td><span class=dim>—</span></td>
+<td class="th">calidad <span class=dim>11%</span></td></tr></tbody></table></div></div>
+
+<div class="block">
+<div class="bh"><i></i>五 · 全主题明细（102 行 · 父体层）</div>
+<div class="bs">点击大类按钮筛选。「主题描述」为亚马逊 customers_say 西语原文，未翻译</div>
+<div class="fbar"><button class="fb on" data-c="">全部</button><button class="fb" data-c="图片与描述不符">图片与描述不符</button><button class="fb" data-c="填充与支撑">填充与支撑</button><button class="fb" data-c="耐用与变形">耐用与变形</button><button class="fb" data-c="材质与做工">材质与做工</button><button class="fb" data-c="尺寸与版型">尺寸与版型</button><button class="fb" data-c="外观与质感">外观与质感</button><button class="fb" data-c="价格与价值">价格与价值</button><button class="fb" data-c="清洁与功能">清洁与功能</button><button class="fb" data-c="舒适体验">舒适体验</button><button class="fb" data-c="其他">其他</button></div>
+<div class="scroll"><table id="tall"><thead><tr><th>父 ASIN</th><th class="num">SKU数</th>
+<th>大类</th><th>主题</th><th class="num">提及</th><th class="num">正面</th><th class="num">负面</th>
+<th class="num">负面率</th><th>图片</th><th>主题描述（西语原文）</th></tr></thead>
+<tbody><tr data-cat="材质与做工">
+<td><code class=dim>B0F666T1C2</code></td>
+<td class="num">9</td>
+<td>材质与做工</td>
+<td><b>calidad</b><span class=dim> · 整体质量</span></td>
+<td class="num">72</td><td class="num">65</td><td class="num">7</td>
+<td class="num r-lo"><b>9.7%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes consideran que la cama para mascotas es de buena calidad y la describen como perfecta. Mencionan que es una muy buena camita y la califican como super recomendada. Los usuarios expresan que les gusta mucho el producto y lo recomiendan completamente.</td></tr><tr data-cat="填充与支撑">
+<td><code class=dim>B0F666T1C2</code></td>
+<td class="num">9</td>
+<td>填充与支撑</td>
+<td><b>acolchado</b><span class=dim> · 软垫厚度</span></td>
+<td class="num">10</td><td class="num">5</td><td class="num">5</td>
+<td class="num r-hi"><b>50.0%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes tienen opiniones divididas sobre el acolchado de esta cama para mascotas. Algunos consideran que está bien acolchonada y que trae una espuma tipo memory foam, mientras que otros opinan que el relleno es un hule espuma bastante simple y que deja que desear. También mencionan que no es una cama estorbosa.</td></tr><tr data-cat="尺寸与版型">
+<td><code class=dim>B0F666T1C2</code></td>
+<td class="num">9</td>
+<td>尺寸与版型</td>
+<td><b>tamaño</b><span class=dim> · 尺寸</span></td>
+<td class="num">33</td><td class="num">30</td><td class="num">3</td>
+<td class="num r-lo"><b>9.1%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes están satisfechos con el tamaño de la cama para mascotas. Mencionan que tiene un excelente tamaño y cumple las medidas. Destacan que el ancho de la cama es súper bien y que es muy amplia. Indican que caben 2 perros de razas pequeñas y que tienen espacio de sobra para dormir.</td></tr><tr data-cat="价格与价值">
+<td><code class=dim>B0F666T1C2</code></td>
+<td class="num">9</td>
+<td>价格与价值</td>
+<td><b>relación calidad-precio</b><span class=dim> · 性价比</span></td>
+<td class="num">22</td><td class="num">19</td><td class="num">3</td>
+<td class="num r-lo"><b>13.6%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes consideran que la cama para mascotas ofrece una buena relación calidad-precio. Mencionan que representa una buena compra y expresan satisfacción con su adquisición.</td></tr><tr data-cat="材质与做工">
+<td><code class=dim>B0F666T1C2</code></td>
+<td class="num">9</td>
+<td>材质与做工</td>
+<td><b>suavidad</b><span class=dim> · 柔软度</span></td>
+<td class="num">20</td><td class="num">17</td><td class="num">3</td>
+<td class="num r-lo"><b>15.0%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan la suavidad y textura de la cama para mascotas. Mencionan que es muy mullida y que no se siente el suelo, además de ser firme.</td></tr><tr data-cat="材质与做工">
+<td><code class=dim>B0F666T1C2</code></td>
+<td class="num">9</td>
+<td>材质与做工</td>
+<td><b>calidad de los materiales</b><span class=dim> · 材料质量</span></td>
+<td class="num">15</td><td class="num">12</td><td class="num">3</td>
+<td class="num r-lo"><b>20.0%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que la cama para mascotas está fabricada con muy buen material y buena tela.</td></tr><tr data-cat="外观与质感">
+<td><code class=dim>B0F666T1C2</code></td>
+<td class="num">9</td>
+<td>外观与质感</td>
+<td><b>apariencia</b><span class=dim> · 外观</span></td>
+<td class="num">16</td><td class="num">14</td><td class="num">2</td>
+<td class="num r-lo"><b>12.5%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes consideran que la cama para mascotas tiene una apariencia muy bonita y se muestran encantados con el producto.</td></tr><tr data-cat="舒适体验">
+<td><code class=dim>B0F666T1C2</code></td>
+<td class="num">9</td>
+<td>舒适体验</td>
+<td><b>atractivo</b><span class=dim> · 宠物喜爱度</span></td>
+<td class="num">41</td><td class="num">40</td><td class="num">1</td>
+<td class="num r-lo"><b>2.4%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes reportan que sus mascotas muestran gran interés por la cama. Mencionan que sus perros se muestran contentos con el producto y que les gusta bastante. Algunos indican que sus mascotas aman su cama y que les encantó desde el primer momento.</td></tr><tr data-cat="舒适体验">
+<td><code class=dim>B0F666T1C2</code></td>
+<td class="num">9</td>
+<td>舒适体验</td>
+<td><b>comodidad</b><span class=dim> · 舒适度</span></td>
+<td class="num">27</td><td class="num">26</td><td class="num">1</td>
+<td class="num r-lo"><b>3.7%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes consideran que la cama para mascotas es cómoda.</td></tr><tr data-cat="填充与支撑">
+<td><code class=dim>B08DFVKB4V</code></td>
+<td class="num">15</td>
+<td>填充与支撑</td>
+<td><b>relleno</b><span class=dim> · 填充物</span></td>
+<td class="num">61</td><td class="num">15</td><td class="num">46</td>
+<td class="num r-hi"><b>75.4%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes expresan descontento con el relleno de la cama para mascotas. Mencionan que tiene mucho menos relleno de lo esperado, que el relleno central deja mucho que desear y resulta pobre. Algunos indican que no está acolchonado y consideran que el relleno es decepcionante.</td></tr><tr data-cat="耐用与变形">
+<td><code class=dim>B08DFVKB4V</code></td>
+<td class="num">15</td>
+<td>耐用与变形</td>
+<td><b>deformación</b><span class=dim> · 变形</span></td>
+<td class="num">45</td><td class="num">12</td><td class="num">33</td>
+<td class="num r-hi"><b>73.3%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes reportan problemas con la deformación de la cama para mascotas. Mencionan que está medio deforme, muy aplastada y que se aplasta del centro. También indican que no ha recuperado su forma y que la cama es muy flácida.</td></tr><tr data-cat="外观与质感">
+<td><code class=dim>B08DFVKB4V</code></td>
+<td class="num">15</td>
+<td>外观与质感</td>
+<td><b>apariencia</b><span class=dim> · 外观</span></td>
+<td class="num">120</td><td class="num">97</td><td class="num">23</td>
+<td class="num r-lo"><b>19.2%</b></td>
+<td><span class=chip-ok>一致</span></td>
+<td class="q">Los clientes consideran que la cama para mascotas tiene una apariencia muy bonita y lujosa. Mencionan que se ve igual que en la foto y destacan su excelente acabado. También indican que la mascota disfruta del producto.</td></tr><tr data-cat="尺寸与版型">
+<td><code class=dim>B08DFVKB4V</code></td>
+<td class="num">15</td>
+<td>尺寸与版型</td>
+<td><b>tamaño</b><span class=dim> · 尺寸</span></td>
+<td class="num">91</td><td class="num">68</td><td class="num">23</td>
+<td class="num r-mid"><b>25.3%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes están satisfechos con el tamaño de la cama para mascotas. Mencionan que el tamaño está muy bien y que es muy amplia. Consideran que es perfecta para perros de talla chica-mediana y super recomendable para perros medianos de menos de 10 kilos. También destacan que el tamaño y color coinciden con lo anunciado.</td></tr><tr data-cat="材质与做工">
+<td><code class=dim>B08DFVKB4V</code></td>
+<td class="num">15</td>
+<td>材质与做工</td>
+<td><b>suavidad</b><span class=dim> · 柔软度</span></td>
+<td class="num">119</td><td class="num">98</td><td class="num">21</td>
+<td class="num r-lo"><b>17.6%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que la cama para mascotas es súper suavecita y muy esponjosa para los perritos. Mencionan que la textura y acolchado están excelentes, y que les gusta mucho al tacto. Describen el producto como afelpado y pachoncito.</td></tr><tr data-cat="舒适体验">
+<td><code class=dim>B08DFVKB4V</code></td>
+<td class="num">15</td>
+<td>舒适体验</td>
+<td><b>comodidad</b><span class=dim> · 舒适度</span></td>
+<td class="num">132</td><td class="num">118</td><td class="num">14</td>
+<td class="num r-lo"><b>10.6%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que la cama para mascotas es cómoda y proporciona comodidad para la mascota. Mencionan que se ve muy cómoda en la cama y resulta muy acogedora. El tamaño L resulta muy cómodo para perros medianos, y los animales muestran preferencia por dormir en ella.</td></tr><tr data-cat="价格与价值">
+<td><code class=dim>B08DFVKB4V</code></td>
+<td class="num">15</td>
+<td>价格与价值</td>
+<td><b>precio</b><span class=dim> · 价格</span></td>
+<td class="num">61</td><td class="num">53</td><td class="num">8</td>
+<td class="num r-lo"><b>13.1%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes consideran que la cama para mascotas ofrece una excelente relación calidad-precio y expresan satisfacción con su compra. Algunos mencionan que volverían a adquirir el producto sin dudarlo.</td></tr><tr data-cat="舒适体验">
+<td><code class=dim>B08DFVKB4V</code></td>
+<td class="num">15</td>
+<td>舒适体验</td>
+<td><b>atractivo</b><span class=dim> · 宠物喜爱度</span></td>
+<td class="num">141</td><td class="num">137</td><td class="num">4</td>
+<td class="num r-lo"><b>2.8%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes indican que las camas para mascotas resultan muy atractivas para sus animales. Mencionan que a sus perros les encanta la cama y que a sus gatos también les encanta.</td></tr><tr data-cat="耐用与变形">
+<td><code class=dim>B0HGLC2G83</code></td>
+<td class="num">7</td>
+<td>耐用与变形</td>
+<td><b>durabilidad</b><span class=dim> · 耐用性</span></td>
+<td class="num">22</td><td class="num">10</td><td class="num">12</td>
+<td class="num r-hi"><b>54.5%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes tienen opiniones divididas sobre la durabilidad de esta cama para mascotas. Algunos la consideran duradera y resistente para perros que les gusta rascar su cama, indicando que les va a durar un muy buen tiempo. Sin embargo, otros usuarios reportan que se rompió a la primera lavada y que ya está muy destartalada, describiéndola como muy frágil.</td></tr><tr data-cat="材质与做工">
+<td><code class=dim>B0HGLC2G83</code></td>
+<td class="num">7</td>
+<td>材质与做工</td>
+<td><b>calidad</b><span class=dim> · 整体质量</span></td>
+<td class="num">127</td><td class="num">116</td><td class="num">11</td>
+<td class="num r-lo"><b>8.7%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes expresan opiniones muy positivas sobre la calidad de esta cama para mascotas. Mencionan que es muy buena y que a sus mascotas les encanta. Los usuarios se sienten satisfechos con el producto y lo describen como una excelente cama para mascota, considerándola la mejor opción disponible.</td></tr><tr data-cat="尺寸与版型">
+<td><code class=dim>B0HGLC2G83</code></td>
+<td class="num">7</td>
+<td>尺寸与版型</td>
+<td><b>tamaño</b><span class=dim> · 尺寸</span></td>
+<td class="num">60</td><td class="num">56</td><td class="num">4</td>
+<td class="num r-lo"><b>6.7%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que la cama para mascotas tiene un excelente tamaño y es bastante amplia para perros mediano-grandes. Mencionan que cumple en tamaño y materiales, siendo súper amplia para que las mascotas duerman muy cómodas.</td></tr><tr data-cat="价格与价值">
+<td><code class=dim>B0HGLC2G83</code></td>
+<td class="num">7</td>
+<td>价格与价值</td>
+<td><b>relación calidad-precio</b><span class=dim> · 性价比</span></td>
+<td class="num">29</td><td class="num">25</td><td class="num">4</td>
+<td class="num r-lo"><b>13.8%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes consideran que la cama para mascotas cumple con sus expectativas respecto a la relación calidad-precio. Mencionan que es una gran compra y que promete lo que vende. Algunos indican que volverían a comprarla y expresan intención de adquirir otra unidad.</td></tr><tr data-cat="材质与做工">
+<td><code class=dim>B0HGLC2G83</code></td>
+<td class="num">7</td>
+<td>材质与做工</td>
+<td><b>suavidad</b><span class=dim> · 柔软度</span></td>
+<td class="num">29</td><td class="num">27</td><td class="num">2</td>
+<td class="num r-lo"><b>6.9%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan la suavidad de la cama para mascotas, describiéndola como muy acolchonada y muy esponjadita. También mencionan que es muy firme y comparan su firmeza con una King Zise.</td></tr><tr data-cat="舒适体验">
+<td><code class=dim>B0HGLC2G83</code></td>
+<td class="num">7</td>
+<td>舒适体验</td>
+<td><b>comodidad</b><span class=dim> · 舒适度</span></td>
+<td class="num">68</td><td class="num">67</td><td class="num">1</td>
+<td class="num r-lo"><b>1.5%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que la cama para mascotas es cómoda y acogedora. Mencionan que sus perros durmieron cómodamente y duermen súper agusto con ella. Algunos observan que sus mascotas dejaron de hacer ruiditos de dolor al dormir.</td></tr><tr data-cat="外观与质感">
+<td><code class=dim>B0HGLC2G83</code></td>
+<td class="num">7</td>
+<td>外观与质感</td>
+<td><b>apariencia</b><span class=dim> · 外观</span></td>
+<td class="num">22</td><td class="num">21</td><td class="num">1</td>
+<td class="num r-lo"><b>4.5%</b></td>
+<td><span class=chip-ok>一致</span></td>
+<td class="q">Los clientes consideran que la cama para mascotas tiene una apariencia atractiva. Describen el producto como bonita y hermosa, destacando sus acabados y que se ve nueva. También mencionan que el color coincide con lo que se muestra en las imágenes.</td></tr><tr data-cat="尺寸与版型">
+<td><code class=dim>B0HGLC2G83</code></td>
+<td class="num">7</td>
+<td>尺寸与版型</td>
+<td><b>ajuste</b><span class=dim> · 贴合/成型</span></td>
+<td class="num">21</td><td class="num">20</td><td class="num">1</td>
+<td class="num r-lo"><b>4.8%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes están satisfechos con el ajuste de la cama para mascotas. Mencionan que le queda bien y que el colchón ortopédico le cae muy bien. Destacan que quedó excelente y que caben perfectamente dos schnauzer. También señalan que prácticamente se adhiere al piso y que el pequeño se acostó de inmediato.</td></tr><tr data-cat="外观与质感">
+<td><code class=dim>B0GMWY2S4C</code></td>
+<td class="num">5</td>
+<td>外观与质感</td>
+<td><b>apariencia</b><span class=dim> · 外观</span></td>
+<td class="num">13</td><td class="num">9</td><td class="num">4</td>
+<td class="num r-mid"><b>30.8%</b></td>
+<td><span class=chip-pic>不符</span></td>
+<td class="q">Los clientes tienen opiniones divididas sobre la apariencia de la cama para mascotas. Algunos la consideran muy bonita y linda, mientras que otros mencionan que no se ve para nada como la imagen y no es lo que esperaban. Sin embargo, algunos clientes indican que es fiel a la fotografía y que los acabados son de calidad.</td></tr><tr data-cat="清洁与功能">
+<td><code class=dim>B0GMWY2S4C</code></td>
+<td class="num">5</td>
+<td>清洁与功能</td>
+<td><b>desmontable</b><span class=dim> · 可拆卸</span></td>
+<td class="num">5</td><td class="num">1</td><td class="num">4</td>
+<td class="num r-hi"><b>80.0%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes señalan que no se puede quitar el relleno para lavarlo y que solo el acolchado interior es removible. Mencionan que los cojines de los bordes no tienen forma de sacarse y que sería mejor si se pudiera desenfundar para lavarlo, indicando que no es desenfundable.</td></tr><tr data-cat="尺寸与版型">
+<td><code class=dim>B0GMWY2S4C</code></td>
+<td class="num">5</td>
+<td>尺寸与版型</td>
+<td><b>ajuste</b><span class=dim> · 贴合/成型</span></td>
+<td class="num">6</td><td class="num">2</td><td class="num">4</td>
+<td class="num r-hi"><b>66.7%</b></td>
+<td><span class=chip-pic>不符</span></td>
+<td class="q">Los clientes tienen opiniones divididas sobre el ajuste de la cama para mascotas. Algunos mencionan que se hincha bien y se esponja como prometía, mientras que otros indican que no se hincha, queda aplastada y nunca llegó a agarrar la forma que aparece en la imagen.</td></tr><tr data-cat="材质与做工">
+<td><code class=dim>B0GMWY2S4C</code></td>
+<td class="num">5</td>
+<td>材质与做工</td>
+<td><b>suavidad</b><span class=dim> · 柔软度</span></td>
+<td class="num">18</td><td class="num">15</td><td class="num">3</td>
+<td class="num r-lo"><b>16.7%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que la cama para mascotas es suavecita y muy mullida. Mencionan que el pelito es muy agradable al tacto.</td></tr><tr data-cat="尺寸与版型">
+<td><code class=dim>B0GMWY2S4C</code></td>
+<td class="num">5</td>
+<td>尺寸与版型</td>
+<td><b>tamaño</b><span class=dim> · 尺寸</span></td>
+<td class="num">16</td><td class="num">14</td><td class="num">2</td>
+<td class="num r-lo"><b>12.5%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que la cama para mascotas tiene un muy buen tamaño y es muy amplia. Mencionan que es maravillosa para perros grandes y describen el producto como una gran cama.</td></tr><tr data-cat="价格与价值">
+<td><code class=dim>B0GMWY2S4C</code></td>
+<td class="num">5</td>
+<td>价格与价值</td>
+<td><b>precio</b><span class=dim> · 价格</span></td>
+<td class="num">13</td><td class="num">11</td><td class="num">2</td>
+<td class="num r-lo"><b>15.4%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes consideran que la cama para mascotas ofrece una buena relación calidad-precio y la describen como una excelente compra. Algunos mencionan que comprarían el producto de nuevo.</td></tr><tr data-cat="舒适体验">
+<td><code class=dim>B0GMWY2S4C</code></td>
+<td class="num">5</td>
+<td>舒适体验</td>
+<td><b>comodidad</b><span class=dim> · 舒适度</span></td>
+<td class="num">16</td><td class="num">16</td><td class="num">0</td>
+<td class="num r-lo"><b>0.0%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes consideran que la cama para mascotas es cómoda.</td></tr><tr data-cat="材质与做工">
+<td><code class=dim>B0HGF1MDBT</code></td>
+<td class="num">10</td>
+<td>材质与做工</td>
+<td><b>calidad del material</b><span class=dim> · 材料质量</span></td>
+<td class="num">10</td><td class="num">5</td><td class="num">5</td>
+<td class="num r-hi"><b>50.0%</b></td>
+<td><span class=chip-pic>不符</span></td>
+<td class="q">Los clientes tienen opiniones divididas sobre la calidad del material de esta cama para mascotas. Algunos mencionan que tiene buenos materiales y una tela agradable, además de contar con una base de espuma bastante gruesa. Sin embargo, otros consideran que el material podría ser más resistente y que la tela es malísima, diferenciándose de lo mostrado en la foto del producto.</td></tr><tr data-cat="材质与做工">
+<td><code class=dim>B0HGF1MDBT</code></td>
+<td class="num">10</td>
+<td>材质与做工</td>
+<td><b>calidad</b><span class=dim> · 整体质量</span></td>
+<td class="num">47</td><td class="num">46</td><td class="num">1</td>
+<td class="num r-lo"><b>2.1%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes consideran que la cama para mascotas es estupenda y perfecta. Describen el producto como bueno y mencionan que a sus mascotas les encanta.</td></tr><tr data-cat="舒适体验">
+<td><code class=dim>B0HGF1MDBT</code></td>
+<td class="num">10</td>
+<td>舒适体验</td>
+<td><b>comodidad</b><span class=dim> · 舒适度</span></td>
+<td class="num">16</td><td class="num">16</td><td class="num">1</td>
+<td class="num r-lo"><b>6.2%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que la cama para mascotas es cómoda y permite que sus perros duerman muy bien. Mencionan que proporciona descanso y que sus mascotas se sienten relajadas y muy felices al usarla.</td></tr><tr data-cat="价格与价值">
+<td><code class=dim>B0HGF1MDBT</code></td>
+<td class="num">10</td>
+<td>价格与价值</td>
+<td><b>relación calidad-precio</b><span class=dim> · 性价比</span></td>
+<td class="num">11</td><td class="num">10</td><td class="num">1</td>
+<td class="num r-lo"><b>9.1%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes consideran que la cama para mascotas ofrece una buena relación calidad-precio. Mencionan que vale la pena el dinero invertido y la califican como una mejor compra. Algunos indican que la volverían a comprar.</td></tr><tr data-cat="尺寸与版型">
+<td><code class=dim>B0HGF1MDBT</code></td>
+<td class="num">10</td>
+<td>尺寸与版型</td>
+<td><b>tamaño</b><span class=dim> · 尺寸</span></td>
+<td class="num">14</td><td class="num">14</td><td class="num">0</td>
+<td class="num r-lo"><b>0.0%</b></td>
+<td><span class=chip-ok>一致</span></td>
+<td class="q">Los clientes están satisfechos con el tamaño de la cama para mascotas. Mencionan que es de buen tamaño y amplia, con espacio adicional. Destacan que las medidas y la foto en la aplicación son muy fieles a la realidad.</td></tr><tr data-cat="外观与质感">
+<td><code class=dim>B0HGF1MDBT</code></td>
+<td class="num">10</td>
+<td>外观与质感</td>
+<td><b>apariencia</b><span class=dim> · 外观</span></td>
+<td class="num">6</td><td class="num">6</td><td class="num">0</td>
+<td class="num r-lo"><b>0.0%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes consideran que la cama para mascotas tiene una apariencia atractiva, describiéndola como bonita y hermosa.</td></tr><tr data-cat="耐用与变形">
+<td><code class=dim>B0F546277V</code></td>
+<td class="num">8</td>
+<td>耐用与变形</td>
+<td><b>durabilidad</b><span class=dim> · 耐用性</span></td>
+<td class="num">62</td><td class="num">47</td><td class="num">15</td>
+<td class="num r-lo"><b>24.2%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que el colchón resiste sin problemas y mantiene su firmeza durante el uso. Mencionan que no se aplasta ni se deforma con el tiempo, y que la cama durará mucho tiempo sin romperse.</td></tr><tr data-cat="材质与做工">
+<td><code class=dim>B0F546277V</code></td>
+<td class="num">8</td>
+<td>材质与做工</td>
+<td><b>suavidad</b><span class=dim> · 柔软度</span></td>
+<td class="num">44</td><td class="num">36</td><td class="num">8</td>
+<td class="num r-lo"><b>18.2%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que la cama para mascotas tiene un material muy suave y esponjoso. Mencionan que la parte superior resulta muy suave para el perrito y que está muy acolchada. También señalan que la textura está calentita y que no se sienten las protuberancias de la colchoneta.</td></tr><tr data-cat="尺寸与版型">
+<td><code class=dim>B0F546277V</code></td>
+<td class="num">8</td>
+<td>尺寸与版型</td>
+<td><b>tamaño</b><span class=dim> · 尺寸</span></td>
+<td class="num">69</td><td class="num">62</td><td class="num">7</td>
+<td class="num r-lo"><b>10.1%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que la cama para mascotas tiene un gran tamaño y consideran que es perfecto. Mencionan que es ideal para perros medianos a grandes y que les sobra mucho espacio, describiéndola como muy amplia.</td></tr><tr data-cat="价格与价值">
+<td><code class=dim>B0F546277V</code></td>
+<td class="num">8</td>
+<td>价格与价值</td>
+<td><b>relación calidad-precio</b><span class=dim> · 性价比</span></td>
+<td class="num">58</td><td class="num">51</td><td class="num">7</td>
+<td class="num r-lo"><b>12.1%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes consideran que la compra vale la pena y destacan la excelente relación precio-calidad. Mencionan estar encantados con la compra y expresan que lo volverían a comprar. También valoran positivamente el tamaño en relación al precio.</td></tr><tr data-cat="清洁与功能">
+<td><code class=dim>B0F546277V</code></td>
+<td class="num">8</td>
+<td>清洁与功能</td>
+<td><b>fácil de limpiar</b><span class=dim> · 易清洁</span></td>
+<td class="num">56</td><td class="num">52</td><td class="num">4</td>
+<td class="num r-lo"><b>7.1%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que la cama para mascotas es fácil de limpiar. Mencionan que la funda es removible para lavarla y que se pueden quitar los forros para lavar los colchones individualmente. Indican que se puede lavar fácilmente sin que se deforme, sacar el relleno para usar lavadora y retirar la espuma para la limpieza.</td></tr><tr data-cat="外观与质感">
+<td><code class=dim>B0F546277V</code></td>
+<td class="num">8</td>
+<td>外观与质感</td>
+<td><b>apariencia</b><span class=dim> · 外观</span></td>
+<td class="num">34</td><td class="num">32</td><td class="num">2</td>
+<td class="num r-lo"><b>5.9%</b></td>
+<td><span class=chip-ok>一致</span></td>
+<td class="q">Los clientes destacan que la cama para mascotas es muy bonita y se ve de calidad. Mencionan que el color les gusta mucho y que coincide exactamente con la foto mostrada. Los usuarios expresan satisfacción general con el producto, describiéndolo como excelente.</td></tr><tr data-cat="舒适体验">
+<td><code class=dim>B0F546277V</code></td>
+<td class="num">8</td>
+<td>舒适体验</td>
+<td><b>atractivo</b><span class=dim> · 宠物喜爱度</span></td>
+<td class="num">78</td><td class="num">76</td><td class="num">2</td>
+<td class="num r-lo"><b>2.6%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes indican que sus mascotas están muy contentas con la cama. Mencionan que a sus perros les encanta y les fascina el producto, y que sus perritos amaron su camita. También comentan que sus perros están como en cama king.</td></tr><tr data-cat="舒适体验">
+<td><code class=dim>B0F546277V</code></td>
+<td class="num">8</td>
+<td>舒适体验</td>
+<td><b>comodidad</b><span class=dim> · 舒适度</span></td>
+<td class="num">94</td><td class="num">94</td><td class="num">0</td>
+<td class="num r-lo"><b>0.0%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que la cama para mascotas es muy cómoda y proporciona comodidad para las mascotas.</td></tr><tr data-cat="填充与支撑">
+<td><code class=dim>B0FSJ4N9HF</code></td>
+<td class="num">7</td>
+<td>填充与支撑</td>
+<td><b>relleno</b><span class=dim> · 填充物</span></td>
+<td class="num">12</td><td class="num">4</td><td class="num">8</td>
+<td class="num r-hi"><b>66.7%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes tienen opiniones divididas sobre el relleno de la cama para mascotas. Algunos mencionan que es acolchada, mientras que otros señalan que tiene muy poco relleno y que nada de acolchonado. Varios usuarios indican que el relleno es común y no ortopédico, y algunos consideran que necesitaría un poco más de relleno para ser perfecta.</td></tr><tr data-cat="材质与做工">
+<td><code class=dim>B0FSJ4N9HF</code></td>
+<td class="num">7</td>
+<td>材质与做工</td>
+<td><b>calidad</b><span class=dim> · 整体质量</span></td>
+<td class="num">45</td><td class="num">40</td><td class="num">5</td>
+<td class="num r-lo"><b>11.1%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes consideran que la cama para mascotas es de buena calidad. Mencionan que es la mejor cama y excelente, expresando satisfacción con el producto y indicando que cumple con sus expectativas.</td></tr><tr data-cat="尺寸与版型">
+<td><code class=dim>B0FSJ4N9HF</code></td>
+<td class="num">7</td>
+<td>尺寸与版型</td>
+<td><b>tamaño</b><span class=dim> · 尺寸</span></td>
+<td class="num">17</td><td class="num">13</td><td class="num">4</td>
+<td class="num r-lo"><b>23.5%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes valoran positivamente el tamaño de la cama para mascotas, destacando que es amplia.</td></tr><tr data-cat="清洁与功能">
+<td><code class=dim>B0FSJ4N9HF</code></td>
+<td class="num">7</td>
+<td>清洁与功能</td>
+<td><b>facilidad de limpieza</b><span class=dim> · 易清洁</span></td>
+<td class="num">7</td><td class="num">3</td><td class="num">4</td>
+<td class="num r-hi"><b>57.1%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes tienen opiniones divididas sobre la facilidad de limpieza de esta cama para mascotas. Algunos mencionan que es lavable y facilita muchísimo la limpieza, y que se puede sacar la funda para lavar. Sin embargo, otros indican que es difícil de lavar y que no se puede sacar el relleno de los bordes.</td></tr><tr data-cat="材质与做工">
+<td><code class=dim>B0FSJ4N9HF</code></td>
+<td class="num">7</td>
+<td>材质与做工</td>
+<td><b>suavidad</b><span class=dim> · 柔软度</span></td>
+<td class="num">8</td><td class="num">8</td><td class="num">1</td>
+<td class="num r-lo"><b>12.5%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que la colchoneta es súper suave y mullida, con un acolchado suave que se ve increíblemente bien. También mencionan que tiene una orilla más firme.</td></tr><tr data-cat="其他">
+<td><code class=dim>B0FSJ4N9HF</code></td>
+<td class="num">7</td>
+<td>其他</td>
+<td><b>capacidad</b><span class=dim> · capacidad</span></td>
+<td class="num">6</td><td class="num">5</td><td class="num">1</td>
+<td class="num r-lo"><b>16.7%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes indican que la cama para mascotas tiene una buena capacidad, mencionando que caben dos perritos cómodamente y que cabe perfectamente.</td></tr><tr data-cat="舒适体验">
+<td><code class=dim>B0FSJ4N9HF</code></td>
+<td class="num">7</td>
+<td>舒适体验</td>
+<td><b>comodidad</b><span class=dim> · 舒适度</span></td>
+<td class="num">15</td><td class="num">15</td><td class="num">0</td>
+<td class="num r-lo"><b>0.0%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que la cama para mascotas es cómoda y ayuda mucho en el tema de descanso. Mencionan que sus mascotas han dormido muy bien en la camita.</td></tr><tr data-cat="外观与质感">
+<td><code class=dim>B0FSJ4N9HF</code></td>
+<td class="num">7</td>
+<td>外观与质感</td>
+<td><b>apariencia</b><span class=dim> · 外观</span></td>
+<td class="num">10</td><td class="num">10</td><td class="num">0</td>
+<td class="num r-lo"><b>0.0%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que la cama para mascotas está muy bonita y tiene un diseño en color gris pizarra que resulta atractivo.</td></tr><tr data-cat="价格与价值">
+<td><code class=dim>B0FSJ4N9HF</code></td>
+<td class="num">7</td>
+<td>价格与价值</td>
+<td><b>precio</b><span class=dim> · 价格</span></td>
+<td class="num">9</td><td class="num">9</td><td class="num">0</td>
+<td class="num r-lo"><b>0.0%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes consideran que vale la pena el precio de esta cama para mascotas. Describen la compra como excelente y expresan satisfacción con su adquisición, calificándola como una compra de 10.</td></tr><tr data-cat="填充与支撑">
+<td><code class=dim>B0FSKGCWK5</code></td>
+<td class="num">5</td>
+<td>填充与支撑</td>
+<td><b>acolchado</b><span class=dim> · 软垫厚度</span></td>
+<td class="num">9</td><td class="num">2</td><td class="num">7</td>
+<td class="num r-hi"><b>77.8%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes señalan problemas con el acolchado de la cama para mascotas. Mencionan que la parte de abajo tiene poco relleno y que no tiene suficiente relleno en general. Algunos indican que el relleno de en medio es de espuma en pedacitos y que hay que esperar varios días para que se vuelva más acolchada.</td></tr><tr data-cat="尺寸与版型">
+<td><code class=dim>B0FSKGCWK5</code></td>
+<td class="num">5</td>
+<td>尺寸与版型</td>
+<td><b>tamaño</b><span class=dim> · 尺寸</span></td>
+<td class="num">15</td><td class="num">12</td><td class="num">3</td>
+<td class="num r-lo"><b>20.0%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes consideran que la cama para mascotas tiene un buen tamaño.</td></tr><tr data-cat="材质与做工">
+<td><code class=dim>B0FSKGCWK5</code></td>
+<td class="num">5</td>
+<td>材质与做工</td>
+<td><b>calidad</b><span class=dim> · 整体质量</span></td>
+<td class="num">36</td><td class="num">34</td><td class="num">2</td>
+<td class="num r-lo"><b>5.6%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes consideran que la cama para mascotas tiene buena calidad e increíble calidad. Mencionan que es tal lo que buscaban y representa una buena elección, describiéndola como muy correcta y una buena cama para perro.</td></tr><tr data-cat="价格与价值">
+<td><code class=dim>B0FSKGCWK5</code></td>
+<td class="num">5</td>
+<td>价格与价值</td>
+<td><b>relación calidad-precio</b><span class=dim> · 性价比</span></td>
+<td class="num">10</td><td class="num">8</td><td class="num">2</td>
+<td class="num r-lo"><b>20.0%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes consideran que el costo es apropiado a la calidad de la cama para mascotas. Algunos describen la compra como excelente y expresan que comprarían otra sin duda.</td></tr><tr data-cat="舒适体验">
+<td><code class=dim>B0FSKGCWK5</code></td>
+<td class="num">5</td>
+<td>舒适体验</td>
+<td><b>comodidad</b><span class=dim> · 舒适度</span></td>
+<td class="num">18</td><td class="num">17</td><td class="num">1</td>
+<td class="num r-lo"><b>5.6%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que la cama para mascotas es cómoda y muy acogedora.</td></tr><tr data-cat="外观与质感">
+<td><code class=dim>B0FSKGCWK5</code></td>
+<td class="num">5</td>
+<td>外观与质感</td>
+<td><b>apariencia</b><span class=dim> · 外观</span></td>
+<td class="num">13</td><td class="num">13</td><td class="num">1</td>
+<td class="num r-lo"><b>7.7%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que la cama para mascotas es super bonita y coincide exactamente con lo que aparece en la foto.</td></tr><tr data-cat="材质与做工">
+<td><code class=dim>B0FSKGCWK5</code></td>
+<td class="num">5</td>
+<td>材质与做工</td>
+<td><b>suavidad</b><span class=dim> · 柔软度</span></td>
+<td class="num">13</td><td class="num">12</td><td class="num">1</td>
+<td class="num r-lo"><b>7.7%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que la cama para mascotas es super suave y ofrece firmeza.</td></tr><tr data-cat="舒适体验">
+<td><code class=dim>B0FSKGCWK5</code></td>
+<td class="num">5</td>
+<td>舒适体验</td>
+<td><b>atractivo</b><span class=dim> · 宠物喜爱度</span></td>
+<td class="num">15</td><td class="num">15</td><td class="num">0</td>
+<td class="num r-lo"><b>0.0%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes indican que sus mascotas muestran gran interés por la cama. Mencionan que a sus perros les encanta, les gusta mucho y las adoran desde el primer día de uso.</td></tr><tr data-cat="价格与价值">
+<td><code class=dim>B0D7PS5X9J</code></td>
+<td class="num">4</td>
+<td>价格与价值</td>
+<td><b>precio</b><span class=dim> · 价格</span></td>
+<td class="num">18</td><td class="num">15</td><td class="num">3</td>
+<td class="num r-lo"><b>16.7%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes consideran que la cama para mascotas tiene un buen precio y destacan su relación calidad-precio. Mencionan estar muy satisfechos con la compra y expresan que volverían a comprarla.</td></tr><tr data-cat="尺寸与版型">
+<td><code class=dim>B0D7PS5X9J</code></td>
+<td class="num">4</td>
+<td>尺寸与版型</td>
+<td><b>tamaño</b><span class=dim> · 尺寸</span></td>
+<td class="num">42</td><td class="num">40</td><td class="num">2</td>
+<td class="num r-lo"><b>4.8%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que la cama para mascotas tiene un tamaño grande y perfecto. Mencionan que es amplia y adecuada para perritos de razas pequeñas o gatitos, así como perfecta para razas grandes.</td></tr><tr data-cat="材质与做工">
+<td><code class=dim>B0D7PS5X9J</code></td>
+<td class="num">4</td>
+<td>材质与做工</td>
+<td><b>suavidad</b><span class=dim> · 柔软度</span></td>
+<td class="num">28</td><td class="num">26</td><td class="num">2</td>
+<td class="num r-lo"><b>7.1%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que la felpa es muy suave y que la textura de la tela les encanta. Mencionan que están súper acolchonadas y que la espuma hace que sientan como que duermen en una cama. El peluche de recubrimiento está muy bien y el relleno es excelente, manteniendo su firmeza.</td></tr><tr data-cat="外观与质感">
+<td><code class=dim>B0D7PS5X9J</code></td>
+<td class="num">4</td>
+<td>外观与质感</td>
+<td><b>apariencia</b><span class=dim> · 外观</span></td>
+<td class="num">13</td><td class="num">12</td><td class="num">1</td>
+<td class="num r-lo"><b>7.7%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que la cama para mascotas presenta una apariencia atractiva, describiéndola como bonita, linda y hermosa. Mencionan que tiene un excelente diseño y que se ve acolchonada. También señalan que los cierres y la espuma se ven de buena calidad.</td></tr><tr data-cat="其他">
+<td><code class=dim>B0D7PS5X9J</code></td>
+<td class="num">4</td>
+<td>其他</td>
+<td><b>fácil de lavar</b><span class=dim> · fácil de lavar</span></td>
+<td class="num">9</td><td class="num">8</td><td class="num">1</td>
+<td class="num r-lo"><b>11.1%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que la cama para mascotas es fácil de lavar. Mencionan que la funda se quita fácilmente para lavar y que el relleno cuenta con fundas lavables.</td></tr><tr data-cat="舒适体验">
+<td><code class=dim>B0D7PS5X9J</code></td>
+<td class="num">4</td>
+<td>舒适体验</td>
+<td><b>comodidad</b><span class=dim> · 舒适度</span></td>
+<td class="num">40</td><td class="num">40</td><td class="num">0</td>
+<td class="num r-lo"><b>0.0%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que la cama para mascotas es cómoda y muy acogedora. Mencionan que cuenta con una superficie especial que brinda confort a la mascota y que la parte superior elevada le da soporte y comodidad de posición. Los usuarios indican que se puede dormir en cualquier posición, estirada, de lado, de frente o acurrucada, y que relaja a la mascota.</td></tr><tr data-cat="尺寸与版型">
+<td><code class=dim>B0D7PS5X9J</code></td>
+<td class="num">4</td>
+<td>尺寸与版型</td>
+<td><b>ajuste</b><span class=dim> · 贴合/成型</span></td>
+<td class="num">16</td><td class="num">16</td><td class="num">0</td>
+<td class="num r-lo"><b>0.0%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes están satisfechos con el ajuste de la cama para mascotas. Mencionan que les queda excelente y que caben perfectamente sus mascotas. Destacan que el tamaño mediano les quedó perfecto y que sigue funcionando muy bien.</td></tr><tr data-cat="舒适体验">
+<td><code class=dim>B0D7PS5X9J</code></td>
+<td class="num">4</td>
+<td>舒适体验</td>
+<td><b>atractivo para mascotas</b><span class=dim> · 宠物喜爱度</span></td>
+<td class="num">38</td><td class="num">38</td><td class="num">0</td>
+<td class="num r-lo"><b>0.0%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes indican que sus mascotas se muestran muy contentas con la cama. Mencionan que sus perros aman esta cama y que sus perritos felices la utilizan. También comentan que a sus bebés les encanta y que está muy contenta con el producto.</td></tr><tr data-cat="填充与支撑">
+<td><code class=dim>B0D95KSRJN</code></td>
+<td class="num">6</td>
+<td>填充与支撑</td>
+<td><b>relleno</b><span class=dim> · 填充物</span></td>
+<td class="num">25</td><td class="num">5</td><td class="num">20</td>
+<td class="num r-hi"><b>80.0%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes expresan descontento con el relleno de la cama para mascotas. Mencionan que el relleno es escaso y que falta más acolchonado. Algunos indican que no cuenta con suficiente material y que el relleno se distribuye de manera irregular. También señalan que el relleno queda muy por debajo de lo esperado.</td></tr><tr data-cat="填充与支撑">
+<td><code class=dim>B0D95KSRJN</code></td>
+<td class="num">6</td>
+<td>填充与支撑</td>
+<td><b>firmeza</b><span class=dim> · 硬挺度</span></td>
+<td class="num">22</td><td class="num">11</td><td class="num">11</td>
+<td class="num r-hi"><b>50.0%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes tienen opiniones divididas sobre la firmeza de esta cama para mascotas. Algunos la describen como excelente y muy firme, mientras que otros mencionan que el material es suave y que los costados son más firmes que el fondo. Varios usuarios señalan que los bordes no están firmes y que la mascota pronto sentirá la dureza del piso.</td></tr><tr data-cat="材质与做工">
+<td><code class=dim>B0D95KSRJN</code></td>
+<td class="num">6</td>
+<td>材质与做工</td>
+<td><b>calidad</b><span class=dim> · 整体质量</span></td>
+<td class="num">53</td><td class="num">43</td><td class="num">10</td>
+<td class="num r-lo"><b>18.9%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes consideran que la cama para mascotas tiene muy buena calidad y la describen como perfecta. Mencionan estar muy contentos con su compra y la califican como la mejor cama del mundo, recomendándola como producto.</td></tr><tr data-cat="材质与做工">
+<td><code class=dim>B0D95KSRJN</code></td>
+<td class="num">6</td>
+<td>材质与做工</td>
+<td><b>calidad de los materiales</b><span class=dim> · 材料质量</span></td>
+<td class="num">17</td><td class="num">14</td><td class="num">3</td>
+<td class="num r-lo"><b>17.6%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que la cama para mascotas está hecha con muy buen material y que la tela se ve de buena calidad. Sin embargo, algunos mencionan que es poco delgada.</td></tr><tr data-cat="尺寸与版型">
+<td><code class=dim>B0D95KSRJN</code></td>
+<td class="num">6</td>
+<td>尺寸与版型</td>
+<td><b>tamaño</b><span class=dim> · 尺寸</span></td>
+<td class="num">22</td><td class="num">20</td><td class="num">2</td>
+<td class="num r-lo"><b>9.1%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes consideran que la cama para mascotas tiene un buen tamaño. Mencionan que el tamaño largo queda bien y representa una buena opción para perritos de chico a mediano.</td></tr><tr data-cat="舒适体验">
+<td><code class=dim>B0D95KSRJN</code></td>
+<td class="num">6</td>
+<td>舒适体验</td>
+<td><b>comodidad</b><span class=dim> · 舒适度</span></td>
+<td class="num">19</td><td class="num">17</td><td class="num">2</td>
+<td class="num r-lo"><b>10.5%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que la cama para mascotas es cómoda y súper cozy.</td></tr><tr data-cat="价格与价值">
+<td><code class=dim>B0D95KSRJN</code></td>
+<td class="num">6</td>
+<td>价格与价值</td>
+<td><b>relación calidad-precio</b><span class=dim> · 性价比</span></td>
+<td class="num">15</td><td class="num">13</td><td class="num">2</td>
+<td class="num r-lo"><b>13.3%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes consideran que la cama para mascotas ofrece una excelente relación calidad-precio y representa una buena compra. Mencionan que volverían a comprarla y la recomiendan ampliamente.</td></tr><tr data-cat="舒适体验">
+<td><code class=dim>B0D95KSRJN</code></td>
+<td class="num">6</td>
+<td>舒适体验</td>
+<td><b>atractivo para mascotas</b><span class=dim> · 宠物喜爱度</span></td>
+<td class="num">18</td><td class="num">18</td><td class="num">0</td>
+<td class="num r-lo"><b>0.0%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes reportan que sus mascotas muestran gran interés por la cama desde el primer contacto. Los perros y gatos se muestran encantados con el producto y adoptan una actitud contenta. Los propietarios observan que sus mascotas duermen de manera más placentera en esta cama.</td></tr><tr data-cat="材质与做工">
+<td><code class=dim>B0D95JV18K</code></td>
+<td class="num">1</td>
+<td>材质与做工</td>
+<td><b>suavidad</b><span class=dim> · 柔软度</span></td>
+<td class="num">18</td><td class="num">13</td><td class="num">5</td>
+<td class="num r-mid"><b>27.8%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que la cama para mascotas es muy suave y esponjosa. Mencionan que queda afelpada y tiene una textura acogedora.</td></tr><tr data-cat="其他">
+<td><code class=dim>B0D95JV18K</code></td>
+<td class="num">1</td>
+<td>其他</td>
+<td><b>diseño</b><span class=dim> · diseño</span></td>
+<td class="num">8</td><td class="num">6</td><td class="num">2</td>
+<td class="num r-mid"><b>25.0%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que la cama para mascotas tiene un diseño muy bonito.</td></tr><tr data-cat="价格与价值">
+<td><code class=dim>B0D95JV18K</code></td>
+<td class="num">1</td>
+<td>价格与价值</td>
+<td><b>relación calidad-precio</b><span class=dim> · 性价比</span></td>
+<td class="num">6</td><td class="num">4</td><td class="num">2</td>
+<td class="num r-mid"><b>33.3%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes tienen opiniones divididas sobre la relación calidad-precio de esta cama para mascotas. Algunos consideran que vale la pena, mientras que otros opinan que no vale la pena y que no ahorra dinero.</td></tr><tr data-cat="外观与质感">
+<td><code class=dim>B0D95JV18K</code></td>
+<td class="num">1</td>
+<td>外观与质感</td>
+<td><b>apariencia</b><span class=dim> · 外观</span></td>
+<td class="num">9</td><td class="num">8</td><td class="num">1</td>
+<td class="num r-lo"><b>11.1%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes indican que sus mascotas se muestran muy contentas con la cama. Mencionan que a sus perros les encanta y les fascina el producto, describiendo a sus mascotas como felices al usarlo.</td></tr><tr data-cat="尺寸与版型">
+<td><code class=dim>B0D95JV18K</code></td>
+<td class="num">1</td>
+<td>尺寸与版型</td>
+<td><b>tamaño adecuado</b><span class=dim> · 尺寸合适度</span></td>
+<td class="num">7</td><td class="num">7</td><td class="num">1</td>
+<td class="num r-lo"><b>14.3%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes consideran que el tamaño de la cama para mascotas es adecuado.</td></tr><tr data-cat="舒适体验">
+<td><code class=dim>B0D95JV18K</code></td>
+<td class="num">1</td>
+<td>舒适体验</td>
+<td><b>comodidad</b><span class=dim> · 舒适度</span></td>
+<td class="num">6</td><td class="num">6</td><td class="num">0</td>
+<td class="num r-lo"><b>0.0%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que la cama para mascotas es cómoda y que sus perros la aman.</td></tr><tr data-cat="其他">
+<td><code class=dim>B0D95JV18K</code></td>
+<td class="num">1</td>
+<td>其他</td>
+<td><b>fácil de lavar</b><span class=dim> · fácil de lavar</span></td>
+<td class="num">5</td><td class="num">5</td><td class="num">0</td>
+<td class="num r-lo"><b>0.0%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que la cama para mascotas se lava súper fácil y es muy fácil de desarmar para lavar. También mencionan que se seca súper fácil.</td></tr><tr data-cat="材质与做工">
+<td><code class=dim>B0FSCCNJC2</code></td>
+<td class="num">4</td>
+<td>材质与做工</td>
+<td><b>suavidad</b><span class=dim> · 柔软度</span></td>
+<td class="num">22</td><td class="num">11</td><td class="num">11</td>
+<td class="num r-hi"><b>50.0%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes tienen opiniones divididas sobre la suavidad de esta cama para mascotas. Algunos destacan la suavidad de textura y que el tejido es agradable, describiéndola como muy mullida con un relleno uniforme. Sin embargo, otros mencionan que no es nada acolchonada y que el relleno no es muy bueno.</td></tr><tr data-cat="价格与价值">
+<td><code class=dim>B0FSCCNJC2</code></td>
+<td class="num">4</td>
+<td>价格与价值</td>
+<td><b>relación calidad-precio</b><span class=dim> · 性价比</span></td>
+<td class="num">16</td><td class="num">8</td><td class="num">8</td>
+<td class="num r-hi"><b>50.0%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes tienen opiniones divididas sobre la relación calidad-precio de esta cama para mascotas. Algunos consideran que tiene buena calidad-precio y que por el precio les pareció bastante bien, mientras que otros la califican como una pésima compra y no la volverían a comprar.</td></tr><tr data-cat="材质与做工">
+<td><code class=dim>B0FSCCNJC2</code></td>
+<td class="num">4</td>
+<td>材质与做工</td>
+<td><b>calidad</b><span class=dim> · 整体质量</span></td>
+<td class="num">37</td><td class="num">30</td><td class="num">7</td>
+<td class="num r-lo"><b>18.9%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes consideran que es un muy buen producto y una buena cama. Destacan que tiene buena calidad y representa una muy buena elección. Mencionan que cumple con sus expectativas y les gusta el producto.</td></tr><tr data-cat="材质与做工">
+<td><code class=dim>B0FSCCNJC2</code></td>
+<td class="num">4</td>
+<td>材质与做工</td>
+<td><b>grosor</b><span class=dim> · 厚度</span></td>
+<td class="num">10</td><td class="num">4</td><td class="num">6</td>
+<td class="num r-hi"><b>60.0%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes tienen opiniones divididas sobre el grosor de la cama para mascotas. Algunos consideran que no es gruesa y muy delgada, mientras que otros mencionan que para el precio serían muy delgadas.</td></tr><tr data-cat="图片与描述不符">
+<td><code class=dim>B0FSCCNJC2</code></td>
+<td class="num">4</td>
+<td>图片与描述不符</td>
+<td><b>publicidad engañosa</b><span class=dim> · 虚假宣传</span></td>
+<td class="num">6</td><td class="num">0</td><td class="num">6</td>
+<td class="num r-hi"><b>100.0%</b></td>
+<td><span class=chip-pic>不符</span></td>
+<td class="q">Los clientes consideran que la cama para mascotas no es lo que anuncian y presenta publicidad engañosa. Mencionan que no cumple con la descripción y califican el producto como un fraude.</td></tr><tr data-cat="外观与质感">
+<td><code class=dim>B0FSCCNJC2</code></td>
+<td class="num">4</td>
+<td>外观与质感</td>
+<td><b>apariencia</b><span class=dim> · 外观</span></td>
+<td class="num">11</td><td class="num">6</td><td class="num">5</td>
+<td class="num r-mid"><b>45.5%</b></td>
+<td><span class=chip-pic>不符</span></td>
+<td class="q">Los clientes tienen opiniones divididas sobre la apariencia de esta cama para mascotas. Algunos la consideran bonita, mientras que otros señalan que no se parece a nada en la foto y que se siente el piso muy feo. También mencionan que parece tapete.</td></tr><tr data-cat="舒适体验">
+<td><code class=dim>B0FSCCNJC2</code></td>
+<td class="num">4</td>
+<td>舒适体验</td>
+<td><b>comodidad</b><span class=dim> · 舒适度</span></td>
+<td class="num">13</td><td class="num">11</td><td class="num">2</td>
+<td class="num r-lo"><b>15.4%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes consideran que la cama para mascotas es cómoda.</td></tr><tr data-cat="其他">
+<td><code class=dim>B0FSCCNJC2</code></td>
+<td class="num">4</td>
+<td>其他</td>
+<td><b>aceptación</b><span class=dim> · aceptación</span></td>
+<td class="num">16</td><td class="num">16</td><td class="num">0</td>
+<td class="num r-lo"><b>0.0%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes indican que sus mascotas reciben muy bien la cama para perros. Mencionan que a sus perritos les encantó, que las perritas están muy contentas con su nueva camita y que están felices con el producto.</td></tr><tr data-cat="材质与做工">
+<td><code class=dim>B0D95JHGQM</code></td>
+<td class="num">1</td>
+<td>材质与做工</td>
+<td><b>calidad</b><span class=dim> · 整体质量</span></td>
+<td class="num">45</td><td class="num">40</td><td class="num">5</td>
+<td class="num r-lo"><b>11.1%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes consideran que la cama para mascotas es maravillosa y funciona muy bien como cama. Mencionan que a sus perros les gusta mucho y expresan estar totalmente satisfechos con el producto.</td></tr><tr data-cat="材质与做工">
+<td><code class=dim>B0D95JHGQM</code></td>
+<td class="num">1</td>
+<td>材质与做工</td>
+<td><b>suavidad</b><span class=dim> · 柔软度</span></td>
+<td class="num">20</td><td class="num">16</td><td class="num">4</td>
+<td class="num r-lo"><b>20.0%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que la cama para mascotas es muy suavecita y mullida. Mencionan que queda más acolchonada y la describen como pachoncita y fluffy. Algunos indican que es el cojín favorito de sus perros.</td></tr><tr data-cat="材质与做工">
+<td><code class=dim>B0D95JHGQM</code></td>
+<td class="num">1</td>
+<td>材质与做工</td>
+<td><b>grosor</b><span class=dim> · 厚度</span></td>
+<td class="num">9</td><td class="num">5</td><td class="num">4</td>
+<td class="num r-mid"><b>44.4%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes tienen opiniones divididas sobre el grosor de la cama para mascotas. Algunos la describen como gruesa, mientras que otros la consideran muy delgada o sencilla delgada.</td></tr><tr data-cat="外观与质感">
+<td><code class=dim>B0D95JHGQM</code></td>
+<td class="num">1</td>
+<td>外观与质感</td>
+<td><b>apariencia</b><span class=dim> · 外观</span></td>
+<td class="num">9</td><td class="num">7</td><td class="num">2</td>
+<td class="num r-lo"><b>22.2%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes consideran que la cama para mascotas tiene una apariencia atractiva. Mencionan que es bonita y que llama la atención desde el principio. También indican que sus mascotas se sienten cómodas en esta camita.</td></tr><tr data-cat="清洁与功能">
+<td><code class=dim>B0D95JHGQM</code></td>
+<td class="num">1</td>
+<td>清洁与功能</td>
+<td><b>facilidad de limpieza</b><span class=dim> · 易清洁</span></td>
+<td class="num">9</td><td class="num">7</td><td class="num">2</td>
+<td class="num r-lo"><b>22.2%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan la facilidad de limpieza de esta cama para mascotas. Mencionan que se lava fácilmente en la máquina de lavar y que sale perfectamente del lavavajillas. También señalan que se seca perfectamente en la secadora, lo que facilita su mantenimiento.</td></tr><tr data-cat="尺寸与版型">
+<td><code class=dim>B0D95JHGQM</code></td>
+<td class="num">1</td>
+<td>尺寸与版型</td>
+<td><b>tamaño</b><span class=dim> · 尺寸</span></td>
+<td class="num">12</td><td class="num">12</td><td class="num">1</td>
+<td class="num r-lo"><b>8.3%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que la cama para mascotas tiene un excelente tamaño y resulta muy amplia.</td></tr><tr data-cat="舒适体验">
+<td><code class=dim>B0D95JHGQM</code></td>
+<td class="num">1</td>
+<td>舒适体验</td>
+<td><b>comodidad</b><span class=dim> · 舒适度</span></td>
+<td class="num">19</td><td class="num">19</td><td class="num">0</td>
+<td class="num r-lo"><b>0.0%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes destacan que la cama para mascotas es cómoda y acogedora. Mencionan que sus perros duermen cómodamente en ella y que resulta cómoda para sus mascotas.</td></tr><tr data-cat="价格与价值">
+<td><code class=dim>B0D95JHGQM</code></td>
+<td class="num">1</td>
+<td>价格与价值</td>
+<td><b>relación calidad-precio</b><span class=dim> · 性价比</span></td>
+<td class="num">10</td><td class="num">10</td><td class="num">0</td>
+<td class="num r-lo"><b>0.0%</b></td>
+<td><span class=dim>—</span></td>
+<td class="q">Los clientes consideran que la cama para mascotas ofrece una excelente relación calidad-precio y representa una excelente compra.</td></tr></tbody></table></div></div>
+
+<div class="block">
+<div class="bh"><i></i>六 · 数据来源与限制</div>
+<div class="note">
+<b>为什么是主题级而不是评论原文级</b>
+<ul>
+<li>Sorftime 的 <code>product_reviews</code> 接口对本批 ASIN 恒返回空，评论原文通道不可用（已逐个验证）。</li>
+<li>现用 <code>product_customers_say</code> 是亚马逊官方对评论做的主题级汇总，自带 positive / negative 计数，
+不需要 AI 猜测情感，<b>数据可靠性高于自建情感模型</b>，但粒度是"主题提及"而非"评论条数"。</li>
+<li>因此报告中所有「占比」都是<b>主题提及层面</b>的比例。若需逐条差评原文（买家姓名、星级、日期、正文），
+需要付费通道（青虎 AI 约 2 积分/ASIN，82 个约 160 积分）或卖家后台 Voice of Customer 导出。</li>
+</ul>
+<b>站点修正记录</b>
+<ul>
+<li>初版误抓 US 站：无价格、无销量、<code>customers_say</code> 仅父 ASIN 有数据、buybox 卖家与本店无关，数据已作废。</li>
+<li>改抓 MX 站后 82/82 全部命中，buybox 卖家均为 <b>COWIT MX</b>，评论为西班牙语，字段完整。</li>
+<li>SKU 码对应：源表 <code>666UPGW281G01</code> ↔ MX 站 listing 内部码 <code>MPGW281G01</code>（M＝墨西哥站），数字段一致。</li>
+</ul>
+<b>校验</b>
+<ul>
+<li>13 个父体内部的 customers_say 数据一致性已逐一比对，<b>无冲突</b>（同父体变体返回完全相同的主题与计数）。</li>
+<li><code>B0CVXLWS3Q</code> 的 <code>tamaño adecuado</code> 主题平台返回 mention=7 / positive=7 / negative=1，
+正负之和超过提及数，为平台数据本身的瑕疵，已原样保留未修正。</li>
+</ul></div></div>
+
+<footer>生成于 2026-11-25 · 数据源 Sorftime MCP（MX 站）· 明细见同目录
+<code>汇总_SKU主题明细.csv</code> / <code>汇总_差评大类.csv</code> / <code>专项_图片不符SKU.csv</code></footer>
+</div>
+<script>
+(function(){
+ var tb=document.querySelector('#tsku tbody');
+ document.getElementById('sall').onclick=function(){
+   this.classList.add('on');document.getElementById('spic').classList.remove('on');
+   [].forEach.call(tb.rows,function(r){r.style.display=''});
+ };
+ document.getElementById('spic').onclick=function(){
+   this.classList.add('on');document.getElementById('sall').classList.remove('on');
+   [].forEach.call(tb.rows,function(r){r.style.display=r.dataset.pic==='1'?'':'none'});
+ };
+ var ab=document.querySelector('#tall tbody');
+ [].forEach.call(document.querySelectorAll('.fb[data-c]'),function(b){
+   b.onclick=function(){
+     [].forEach.call(document.querySelectorAll('.fb[data-c]'),function(x){x.classList.remove('on')});
+     b.classList.add('on');var c=b.dataset.c;
+     [].forEach.call(ab.rows,function(r){r.style.display=(!c||r.dataset.cat===c)?'':'none'});
+   };
+ });
+})();
+</script></body></html>
